@@ -4,7 +4,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6;padding:0;transition:background 0.3s,color 0.3s}
 .container{max-width:1100px;margin:0 auto;padding:40px 24px 80px}
-.header{position:relative;text-align:center;padding:60px 24px 48px;background:linear-gradient(180deg,var(--hero-grad-start) 0%,var(--hero-grad-end) 100%);border-bottom:1px solid var(--border);margin-bottom:48px;transition:background 0.3s}
+.header{position:relative;text-align:center;padding:60px 24px 48px;background:linear-gradient(180deg,var(--hero-grad-start) 0%,var(--hero-grad-end) 100%);border-bottom:1px solid var(--border);transition:background 0.3s}
 .header .badge{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-bottom:16px;display:inline-block;padding:6px 14px;border:1px solid var(--accent-dim);border-radius:3px}
 .header h1{font-family:'DM Sans',sans-serif;font-weight:900;font-size:38px;letter-spacing:-1px;margin-bottom:8px;line-height:1.15}
 .header .subtitle{color:var(--text-dim);font-size:15px;margin-bottom:4px}
