@@ -1,103 +1,161 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>AYR Cooling | Digital Marketing Dossier | BoostCon</title>
-<link rel="stylesheet" href="../allyearcooling/style.css">
+<title>All Year Cooling & Plumbing | Digital Marketing Dossier | BoostCon</title>
+<link rel="stylesheet" href="style.css">
 </head><body>
-<div class="hd"><div class="bg">Digital Marketing Audit</div><h1>All Year Cooling & Plumbing</h1><div class="sub">Digital Marketing and Online Health Dossier | Coral Springs, FL | HVAC + Plumbing | ~$19.6M Revenue</div><div class="mt">Prepared September 4, 2026 | Merged with GHL Audit Data | For Discovery Call Use</div></div>
-<div class="ctn">
-<div class="es">
-<p><strong>Executive Summary.</strong> All Year Cooling & Plumbing (legal: All Year Cooling and Heating, Inc.) is a 52 year old family business with a strong brand foundation: 4.7 stars across ~2,600 Google reviews, an A+ BBB accreditation, and a large well structured website with 269 pages and 80+ city level landing pages. Their conversion architecture (click to call, SMS, booking, coupons, financing) is above average for the HVAC category.</p>
-<p>However, their digital presence has three structural weaknesses costing them market share. First, they rank <strong>#9 on Google Maps</strong> for "air conditioning contractor near me" in their own market (per GHL heatmap), while competitors Art Plumbing (10,600+ reviews) and Snyder AC (29,000+ reviews) dominate. Second, their <strong>NAP consistency is broken</strong> with 5+ different phone numbers across Google, Yelp, BBB, Facebook, and their own website. GHL confirms only 52% of their 31 checked citations are accurate. Third, their <strong>website performance is catastrophic</strong>: 18.2 second mobile load time (GHL data) with Core Web Vitals near zero.</p>
-<p>The composite Online Health Score is <strong>58 out of 100</strong>. The biggest immediate opportunity is fixing website speed and local SEO (NAP standardization + organic ranking) to capture high intent search traffic they are currently losing to competitors on the same street.</p>
+<div class="header"><div class="badge">Digital Marketing Audit</div><h1>All Year Cooling &amp; Plumbing</h1><div class="subtitle">Digital Marketing and Online Health Dossier</div><div class="subtitle">Coral Springs, FL | HVAC + Plumbing | ~$19M Revenue</div><div class="meta">Prepared September 4, 2026 | Merged from 4 audit sources | For Discovery Call Use</div></div>
+<div class="container">
+<div class="exec-summary">
+<p><strong>Executive Summary.</strong> All Year Cooling &amp; Plumbing (legal: All Year Cooling and Heating, Inc.) is a 52 year old South Florida HVAC company doing ~$19M/year. <strong>Acquired March 2024 by Creative Service Partners</strong> (Trivest Partners backed, ~$6.1B AUM). Sister companies: Hammond Services, Besel Plumbing, The Clean Plumbers. Tommy Smith is the public face but the buying committee is a PE roll up sponsor. Site still claims "Family Owned &amp; Operated Since 1973" which is now misleading.</p>
+<p>Brand foundation is strong: 4.8 stars, ~2,536 Google reviews, A+ BBB since 2007, 738 URL website. But five critical failures are costing market share: <strong>(1) GTM disabled sitewide</strong> (HTML commented out), no Google Ads conversion tag, spending blind on Google + Microsoft + Meta. <strong>(2) 167 of 276 location URLs redirect</strong> (60.5%) while still in sitemap. City+service layer collapsed. <strong>(3) Review schema fabricated</strong>: hardcoded 5.0/100 vs real 4.8/2,536. Manual action risk. <strong>(4) AWS access key exposed</strong> in page source. <strong>(5) Rank #9 on Google Maps</strong> in own market. Art Plumbing is #8 on same street. Snyder is #2 with 29K reviews.</p>
+<p>Composite Online Health Score: <strong>53 out of 100</strong>. The biggest opportunity is fixing broken infrastructure, not more marketing.</p>
 </div>
-<section><h2><span class="n">01</span> Composite Online Health Score</h2>
-<div class="sc"><div class="rg"><svg width="140" height="140"><circle class="bc" cx="70" cy="70" r="60"/><circle class="fc" cx="70" cy="70" r="60" stroke-dasharray="377" stroke-dashoffset="158"/></svg><div class="st"><div class="sn">58</div><div class="sl">Out of 100</div></div></div><div class="vt"><h2>Moderate Health</h2><p>Strong brand and review foundation, but significant gaps in organic search visibility, NAP consistency, and website performance are limiting market share capture.</p></div></div>
-<table><thead><tr><th>Category</th><th>Max</th><th>Score</th><th>%</th></tr></thead><tbody>
-<tr><td><strong>Google Presence</strong></td><td>25</td><td style="color:var(--w);font-weight:700;font-family:'Space Mono',monospace">14</td><td>56%</td></tr>
-<tr><td><strong>Website Health</strong></td><td>20</td><td style="color:var(--x);font-weight:700;font-family:'Space Mono',monospace">11</td><td>55%</td></tr>
-<tr><td><strong>SEO</strong></td><td>20</td><td style="color:var(--x);font-weight:700;font-family:'Space Mono',monospace">9</td><td>45%</td></tr>
-<tr><td><strong>Reputation / Reviews</strong></td><td>15</td><td style="color:var(--a);font-weight:700;font-family:'Space Mono',monospace">11</td><td>73%</td></tr>
-<tr><td><strong>Social Media</strong></td><td>10</td><td style="color:var(--x);font-weight:700;font-family:'Space Mono',monospace">5</td><td>50%</td></tr>
-<tr><td><strong>Paid Advertising</strong></td><td>10</td><td style="color:var(--a);font-weight:700;font-family:'Space Mono',monospace">7</td><td>70%</td></tr>
-<tr style="border-top:2px solid var(--b)"><td><strong>COMPOSITE</strong></td><td><strong>100</strong></td><td style="font-size:18px;color:var(--w);font-weight:700;font-family:'Space Mono',monospace">58</td><td><strong>58%</strong></td></tr>
+<section><h2><span class="num">01</span> Composite Online Health Score</h2><p class="lead">Weighted scoring across six categories. Merged from 4 independent audit sources.</p>
+<div class="score-hero"><div class="score-ring"><svg width="160" height="160"><circle class="bg-circle" cx="80" cy="80" r="68"/><circle class="fg-circle" cx="80" cy="80" r="68" stroke-dasharray="427" stroke-dashoffset="201"/></svg><div class="score-text"><div class="score-num">53</div><div class="score-label">Out of 100</div></div></div><div class="verdict"><h2>At Risk</h2><p>A dominant local brand running on broken infrastructure. Disabled measurement, collapsed SEO pages, fabricated schema, and a leaked AWS key are actively suppressing performance.</p></div></div>
+<table class="score-table"><thead><tr><th>Category</th><th>Max</th><th>Score</th><th class="bar-cell">Visual</th><th>%</th></tr></thead><tbody>
+<tr><td class="cat-name">Google Presence</td><td>25</td><td class="score-val" style="color:var(--warn)">15</td><td><div class="score-bar"><div class="fill" style="width:60%;background:var(--warn)"></div></div></td><td>60%</td></tr>
+<tr><td class="cat-name">Website Health</td><td>20</td><td class="score-val" style="color:var(--danger)">9</td><td><div class="score-bar"><div class="fill" style="width:45%;background:var(--danger)"></div></div></td><td>45%</td></tr>
+<tr><td class="cat-name">SEO</td><td>20</td><td class="score-val" style="color:var(--danger)">9</td><td><div class="score-bar"><div class="fill" style="width:45%;background:var(--danger)"></div></div></td><td>45%</td></tr>
+<tr><td class="cat-name">Reputation / Reviews</td><td>15</td><td class="score-val" style="color:var(--warn)">10</td><td><div class="score-bar"><div class="fill" style="width:67%;background:var(--warn)"></div></div></td><td>67%</td></tr>
+<tr><td class="cat-name">Social Media</td><td>10</td><td class="score-val" style="color:var(--danger)">4</td><td><div class="score-bar"><div class="fill" style="width:40%;background:var(--danger)"></div></div></td><td>40%</td></tr>
+<tr><td class="cat-name">Paid Advertising</td><td>10</td><td class="score-val" style="color:var(--warn)">6</td><td><div class="score-bar"><div class="fill" style="width:60%;background:var(--warn)"></div></div></td><td>60%</td></tr>
+<tr style="border-top:2px solid var(--border)"><td class="cat-name" style="font-size:15px">COMPOSITE</td><td style="font-weight:700">100</td><td class="score-val" style="font-size:20px;color:var(--warn)">53</td><td><div class="score-bar" style="height:10px"><div class="fill" style="width:53%;background:var(--warn)"></div></div></td><td style="font-weight:700">53%</td></tr>
 </tbody></table>
-<p style="font-size:11px;color:var(--m);margin-top:8px">GHL overall score: 61%. Scores updated with GHL confirmed data (page speed catastrophic, Google Ads confirmed active).</p>
+<p style="font-size:11px;color:var(--text-mute);margin-top:8px">Reconciled: Littlebird (58), GHL (61), Claude source inspection (56), Chat public data (52). Final weights toward verified source code findings.</p>
 </section>
-<section><h2><span class="n">02</span> Key Findings (Merged with GHL Data)</h2>
+<section><h2><span class="num">02</span> Company Identification</h2><p class="lead">Full corporate profile. Merged from all sources.</p>
+<div class="card-grid">
+<div class="card"><h3><span class="icon" style="background:rgba(0,217,163,0.15);color:var(--accent)">ID</span> Corporate Identity</h3>
+<div class="stat-row"><span class="stat-label">Legal Name</span><span class="stat-val" style="font-size:11px">All Year Cooling and Heating, Inc.</span></div>
+<div class="stat-row"><span class="stat-label">FL Doc #</span><span class="stat-val">442831</span></div>
+<div class="stat-row"><span class="stat-label">FEI/EIN</span><span class="stat-val">59-1496800</span></div>
+<div class="stat-row"><span class="stat-label">DBA Names</span><span class="stat-val" style="font-size:10px">All Year Cooling, All Year AC, All Year Air, Florida HVAC Company Inc</span></div>
+<div class="stat-row"><span class="stat-label">Parent</span><span class="stat-val" style="font-size:11px;color:var(--accent)">Creative Service Partners <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">PE Sponsor</span><span class="stat-val" style="font-size:10px">Trivest Partners (~$6.1B AUM) <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Sister Cos</span><span class="stat-val" style="font-size:10px">Hammond Services, Besel Plumbing, The Clean Plumbers <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Acquired</span><span class="stat-val" style="font-size:11px">March 1, 2024 (LBO) <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">President</span><span class="stat-val">Tommy Smith</span></div>
+<div class="stat-row"><span class="stat-label">Founded</span><span class="stat-val">12/27/1973 (52 yrs)</span></div>
+<div class="stat-row"><span class="stat-label">Employees</span><span class="stat-val">~100</span></div>
+<div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-val">~$19M (client supplied)</span></div>
+</div>
+<div class="card"><h3><span class="icon" style="background:rgba(77,166,255,0.15);color:var(--low)">LOC</span> Locations &amp; Phone</h3>
+<div class="stat-row"><span class="stat-label">HQ</span><span class="stat-val" style="font-size:10px">4300 NW 124th Ave, Coral Springs, FL 33065</span></div>
+<div class="stat-row"><span class="stat-label">Naples</span><span class="stat-val" style="font-size:10px">6203 Janes Lane, Naples, FL 34109</span></div>
+<div class="stat-row"><span class="stat-label">Mailing</span><span class="stat-val" style="font-size:10px">3530 Windmill Ranch Rd, Weston, FL 33331 <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Hollywood</span><span class="stat-val" style="font-size:10px">2113 Lincoln St, Hollywood, FL 33020 <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Phone (Web)</span><span class="stat-val">(954) 507-0702</span></div>
+<div class="stat-row"><span class="stat-label">Phone (BBB)</span><span class="stat-val">(888) 820-8705</span></div>
+<div class="stat-row"><span class="stat-label">Phone (GBP)</span><span class="stat-val">(954) 646-4729</span></div>
+<div class="stat-row"><span class="stat-label">Phone (Vanity)</span><span class="stat-val">1-833-ALL-YEAR <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Phone (LinkedIn)</span><span class="stat-val">954-566-4644 <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Phone (Legacy)</span><span class="stat-val">(888) 920-0708 <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Website</span><span class="stat-val">allyearcooling.com</span></div>
+<div class="stat-row"><span class="stat-label">Other Domains</span><span class="stat-val" style="font-size:10px">allyeardirect.com, allyearduct.com <span class="new-tag">NEW</span></span></div>
+</div>
+<div class="card"><h3><span class="icon" style="background:rgba(255,159,67,0.15);color:var(--warn)">SOC</span> Social Profiles</h3>
+<div class="stat-row"><span class="stat-label">Facebook</span><span class="stat-val">9,789 likes</span></div>
+<div class="stat-row"><span class="stat-label">Instagram</span><span class="stat-val">~7,700 followers</span></div>
+<div class="stat-row"><span class="stat-label">YouTube</span><span class="stat-val">335 subs (dormant)</span></div>
+<div class="stat-row"><span class="stat-label">LinkedIn</span><span class="stat-val">399 followers <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">TikTok</span><span class="stat-val">10 followers (dead)</span></div>
+<div class="stat-row"><span class="stat-label">X / Twitter</span><span class="stat-val">346 (dormant)</span></div>
+<div class="stat-row"><span class="stat-label">Threads</span><span class="stat-val">134, active <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Pinterest</span><span class="stat-val">436, dead <span class="new-tag">NEW</span></span></div>
+<div class="stat-row"><span class="stat-label">Nextdoor</span><span class="stat-val">209 faves <span class="new-tag">NEW</span></span></div>
+</div>
+</div></section>
+<section><h2><span class="num">03</span> Key Findings (All Sources Merged)</h2><p class="lead">Every data point from 4 audit sources. NEW = not in original Littlebird audit.</p>
 <table><thead><tr><th>Category</th><th>Finding</th><th>Value</th><th>Source</th></tr></thead><tbody>
-<tr><td>Google Ads</td><td>Confirmed active</td><td><span class="bg-s b-g">Confirmed</span></td><td>GHL</td></tr>
-<tr><td>Meta Pixel</td><td>Installed on website</td><td><span class="bg-s b-g">Good</span></td><td>GHL</td></tr>
-<tr><td>Google Tag Manager</td><td>Installed</td><td><span class="bg-s b-g">Good</span></td><td>GHL</td></tr>
-<tr><td>Google Analytics</td><td>Installed</td><td><span class="bg-s b-g">Good</span></td><td>GHL</td></tr>
-<tr><td>GBP Status</td><td>100% verified (address, website, photos, hours, phone)</td><td><span class="bg-s b-g">Verified</span></td><td>GHL</td></tr>
-<tr><td>GBP Reviews</td><td>4.7 stars, ~2,582 reviews</td><td><span class="bg-s b-g">Strong</span></td><td>GHL + Trane</td></tr>
-<tr><td>Map Pack Rank</td><td>#9 for "AC contractor near me" (31.1 mi radius)</td><td><span class="bg-s b-x">Critical</span></td><td>GHL Heatmap</td></tr>
-<tr><td>Review Response Rate</td><td>96% (same day average)</td><td><span class="bg-s b-g">Excellent</span></td><td>GHL</td></tr>
-<tr><td>Facebook Reviews</td><td>0 reviews, 0 rating</td><td><span class="bg-s b-x">Gap</span></td><td>GHL</td></tr>
-<tr><td>Mobile Page Speed</td><td>18.2 seconds (global avg 0.2s)</td><td><span class="bg-s b-x">Critical</span></td><td>GHL</td></tr>
-<tr><td>Desktop Page Speed</td><td>4.4 seconds (global avg 0.2s)</td><td><span class="bg-s b-x">Critical</span></td><td>GHL</td></tr>
-<tr><td>Core Web Vitals</td><td>Page Speed 0%, LCP 6%, INP 6%, SEO 3%</td><td><span class="bg-s b-x">Critical</span></td><td>GHL</td></tr>
-<tr><td>Website Health</td><td>11 should fix, 2 consider, 4 passed</td><td><span class="bg-s b-x">Critical</span></td><td>GHL</td></tr>
-<tr><td>Listing Accuracy</td><td>52% (16/31 match, 15/31 no match)</td><td><span class="bg-s b-x">Critical</span></td><td>GHL</td></tr>
-<tr><td>NAP Phone Numbers</td><td>5+ different numbers across platforms</td><td><span class="bg-s b-x">Critical</span></td><td>Audit + GHL</td></tr>
-<tr><td>GBP Phone</td><td>(954) 646-4729 (differs from all others)</td><td><span class="bg-s b-x">Issue</span></td><td>GHL</td></tr>
-<tr><td>Chat Widget</td><td>Not present on website</td><td><span class="bg-s b-x">Gap</span></td><td>Audit + GHL</td></tr>
-<tr><td>Yelp Rating</td><td>4.0 stars (lowest major platform)</td><td><span class="bg-s b-w">Weak</span></td><td>Audit</td></tr>
-<tr><td>BBB Customer Reviews</td><td>3.38 stars (16 reviews)</td><td><span class="bg-s b-w">Weak</span></td><td>BBB</td></tr>
-<tr><td>Instagram Engagement</td><td>0.1 to 0.3% (8-21 likes per post on 7.7K followers)</td><td><span class="bg-s b-x">Very Poor</span></td><td>Audit</td></tr>
-<tr><td>YouTube</td><td>Dormant ~1 year, 335 subs</td><td><span class="bg-s b-w">Stale</span></td><td>Audit</td></tr>
-<tr><td>TikTok</td><td>10 followers, abandoned</td><td><span class="bg-s b-x">Dead</span></td><td>Audit</td></tr>
-<tr><td>Negative Review Theme</td><td>26% negative (13/50 analyzed). Warranty disputes, post-sale service breakdowns</td><td><span class="bg-s b-x">High Priority</span></td><td>GHL</td></tr>
-</tbody></table>
-</section>
-<section><h2><span class="n">03</span> Competitive Benchmark</h2>
-<p class="ld">GHL heatmap ranking for "air conditioning contractor near me" (31.1 mi radius, Coral Springs). AYR ranks #9.</p>
+<tr><td><strong>Measurement</strong></td><td>GTM container disabled sitewide</td><td><span class="badge-status badge-danger">Critical</span></td><td>Claude: GTM-TWJN4RX HTML commented out. GHL detected string but did not realize it is commented out.</td></tr>
+<tr><td><strong>Measurement</strong></td><td>No Google Ads conversion tag</td><td><span class="badge-status badge-danger">Critical</span></td><td>Claude: No AW- tag on any page. Spending blind.</td></tr>
+<tr><td><strong>Conversion</strong></td><td>ServiceTitan scheduler commented out</td><td><span class="badge-status badge-danger">Critical</span></td><td>Claude: Replaced by Netic AI. Nobody measuring the swap.</td></tr>
+<tr><td><strong>Conversion</strong></td><td>Mobile "Book Now" CTA is dead</td><td><span class="badge-status badge-danger">Critical</span></td><td>Claude: No href, no click handler on highest intent mobile button.</td></tr>
+<tr><td><strong>Security</strong></td><td>AWS access key exposed in page source</td><td><span class="badge-status badge-danger">Critical</span></td><td>Claude: AKIAZG22STRSSPVXTPYG in Organization schema sameAs array on every page load.</td></tr>
+<tr><td><strong>SEO</strong></td><td>167 of 276 location URLs redirect (60.5%)</td><td><span class="badge-status badge-danger">Critical</span></td><td>Claude: All 167 still in sitemap. City+service layer collapsed. Cannot rank for "[service] in [city]".</td></tr>
+<tr><td><strong>SEO</strong></td><td>Review schema fabricated and invalid</td><td><span class="badge-status badge-danger">Critical</span></td><td>Claude: Double encoded JSON, @type Product, hardcoded 5.0/100 vs real 4.8/2,536. Manual action risk. 56.9 KB dead weight.</td></tr>
+<tr><td><strong>SEO</strong></td><td>No LocalBusiness or HVACBusiness schema</td><td><span class="badge-status badge-danger">Critical</span></td><td>Claude: Only bare Organization. No geo, hours, areaServed.</td></tr>
+<tr><td><strong>SEO</strong></td><td>AI crawlers fully blocked</td><td><span class="badge-status badge-danger">High</span></td><td>Claude: GPTBot, ChatGPT-User, CCBot, anthropic-ai, ClaudeBot, Google-Extended all Disallowed.</td></tr>
+<tr><td><strong>SEO</strong></td><td>robots.txt over blocks /?* and /page/*</td><td><span class="badge-status badge-warn">Medium</span></td><td>Claude: Blocks UTM/gclid URLs and blog pagination.</td></tr>
+<tr><td><strong>Local SEO</strong></td><td>NAP phone: 6+ different numbers</td><td><span class="badge-status badge-danger">Critical</span></td><td>All sources: (954) 507-0702, 888.204.5554, (888) 820-8705, (954) 646-4729, 1-833-ALL-YEAR, (888) 920-0708, 954-566-4644.</td></tr>
+<tr><td><strong>Local SEO</strong></td><td>Listing accuracy: 52% (16/31 match)</td><td><span class="badge-status badge-danger">Critical</span></td><td>GHL: 15 of 31 directories have wrong info.</td></tr>
+<tr><td><strong>Local SEO</strong></td><td>Duplicate Yelp listings splitting reviews</td><td><span class="badge-status badge-danger">High</span></td><td>Claude: 4.0/315 + 4.4/247. File merge request.</td></tr>
+<tr><td><strong>Google</strong></td><td>GBP: 4.8 stars, ~2,536 reviews, 96% response</td><td><span class="badge-status badge-good">Strong</span></td><td>Claude + GHL. ~24 new reviews/month.</td></tr>
+<tr><td><strong>Google</strong></td><td>Map Pack Rank: #9 in own market</td><td><span class="badge-status badge-danger">Critical</span></td><td>GHL heatmap. Art Plumbing #8 same street. Snyder #2.</td></tr>
+<tr><td><strong>Google</strong></td><td>SEOlium: #1,042 of 2,439 FL HVAC</td><td><span class="badge-status badge-danger">Critical</span></td><td>Chat: 0 Top 10 rankings, 99.7 avg position.</td></tr>
+<tr><td><strong>Website</strong></td><td>Mobile speed: 18.2s (avg 0.2s)</td><td><span class="badge-status badge-danger">Critical</span></td><td>GHL. Core Web Vitals: 0% speed, 6% LCP, 6% INP, 3% SEO.</td></tr>
+<tr><td><strong>Website</strong></td><td>HTML 230.7 KB, Bootstrap x2 (316KB), GA4 x2 (1.14MB)</td><td><span class="badge-status badge-danger">High</span></td><td>Claude: 24 CSS, 32 JS unbundled. 104 images, 0 lazy load, 94 PNG vs 1 WebP.</td></tr>
+<tr><td><strong>MarTech</strong></td><td>Google Ads active (via ClickCease), Microsoft UET confirmed, Meta Pixel confirmed</td><td><span class="badge-status badge-good">Active</span></td><td>Claude: Real ad spend across 3 platforms. But GTM disabled = no measurement.</td></tr>
+<tr><td><strong>MarTech</strong></td><td>Two GA4 properties firing simultaneously</td><td><span class="badge-status badge-danger">High</span></td><td>Claude: G-4Z5V1684DG + G-RBF72197YX. Pick one.</td></tr>
+<tr><td><strong>Reputation</strong></td><td>ConsumerAffairs: 2.9/5 from 821 reviews</td><td><span class="badge-status badge-danger">Critical</span></td><td>Chat: Updated Sep 2, 2026. Major red flag neither I nor Claude caught initially.</td></tr>
+<tr><td><strong>Reputation</strong></td><td>BBB customer reviews: 3.38/5 from 16</td><td><span class="badge-status badge-warn">Weak</span></td><td>BBB. 55 complaints in 3 years (44 service/repair).</td></tr>
+<tr><td><strong>Reputation</strong></td><td>Warranty non fulfillment + no shows recurring across platforms</td><td><span class="badge-status badge-danger">High</span></td><td>All sources: BBB, Angi, Yelp, Birdeye, ConsumerAffairs. Operational problem masking as marketing problem.</td></tr>
+<tr><td><strong>Social</strong></td><td>Facebook 9.7K but "1 talking about this"</td><td><span class="badge-status badge-danger">Near zero</span></td><td>Claude: Near zero engagement on largest audience.</td></tr>
+<tr><td><strong>Social</strong></td><td>Instagram 0.1 to 0.3% engagement on 1,468 posts</td><td><span class="badge-status badge-danger">Very poor</span></td><td>Littlebird: 8 to 21 likes per post on 7.7K followers.</td></tr>
+<tr><td><strong>Social</strong></td><td>Effort across 8 platforms, traction on 1</td><td><span class="badge-status badge-warn">Over diversified</span></td><td>Claude: Only Threads (134 followers) has any recent activity besides FB.</td></tr>
+<tr><td><strong>Content</strong></td><td>"Family Owned" claim now misleading</td><td><span class="badge-status badge-warn">Issue</span></td><td>Chat: Joined Creative Service Partners in 2024.</td></tr>
+<tr><td><strong>Content</strong></td><td>License numbers inconsistent across pages</td><td><span class="badge-status badge-warn">Issue</span></td><td>Chat: CAC1824800 vs CAC1825013.</td></tr>
+<tr><td><strong>Content</strong></td><td>Meta description omits Coral Springs</td><td><span class="badge-status badge-warn">Issue</span></td><td>Claude: Names Miami/Naples but not home market.</td></tr>
+<tr><td><strong>Content</strong></td><td>Spanish page exists, no hreflang</td><td><span class="badge-status badge-warn">Medium</span></td><td>Claude: Majority Hispanic metro, orphan page.</td></tr>
+</tbody></table></section>
+<section><h2><span class="num">04</span> Competitive Benchmark</h2><p class="lead">GHL heatmap: "air conditioning contractor near me" 31.1 mi radius. AYR ranks #9.</p>
 <table><thead><tr><th>Rank</th><th>Company</th><th>Rating</th><th>Reviews</th><th>Notes</th></tr></thead><tbody>
 <tr><td>1</td><td>Reliable AC Services</td><td>4.9</td><td>380</td><td>Smaller but high rated</td></tr>
-<tr><td>2</td><td>Snyder AC (Air America)</td><td>4.7</td><td>6,260</td><td>Strong local SEO, large review base</td></tr>
-<tr><td>3</td><td>Air Pros</td><td>4.9</td><td>950</td><td>Bankruptcy filed, weakening</td></tr>
+<tr><td>2</td><td>Snyder AC (Air America)</td><td>4.7</td><td>6,260</td><td>Strong SEO. ~29K total across platforms.</td></tr>
+<tr><td>3</td><td>Air Pros</td><td>4.9</td><td>950</td><td>Bankruptcy filed. Your Exuma conflict.</td></tr>
 <tr><td>4</td><td>Blue Mountain AC</td><td>5.0</td><td>392</td><td>Smaller, perfect rating</td></tr>
 <tr><td>5</td><td>Brisk Air Coral Springs</td><td>4.8</td><td>393</td><td>Local competitor</td></tr>
 <tr><td>6</td><td>Alpha Breezy HVAC</td><td>4.9</td><td>49</td><td>Very small</td></tr>
 <tr><td>7</td><td>Aire Serv of Coral Springs</td><td>5.0</td><td>181</td><td>Franchise, perfect rating</td></tr>
-<tr><td>8</td><td>Art Plumbing, AC & Electric</td><td>4.8</td><td>10,560</td><td>Same street as AYR. Claims 25K+ total. Aggressive advertiser.</td></tr>
-<tr style="background:rgba(255,159,67,0.05)"><td><strong>9</strong></td><td><strong>All Year Cooling & Plumbing (TARGET)</strong></td><td><strong>4.7</strong></td><td><strong>2,580</strong></td><td><strong>52 years in business. Ranked #9 in own market.</strong></td></tr>
+<tr><td>8</td><td>Art Plumbing, AC &amp; Electric</td><td>4.8</td><td>10,560</td><td>Same street as AYR. Claims 25K+ total. Aggressive advertiser.</td></tr>
+<tr style="background:rgba(255,159,67,0.05)"><td><strong>9</strong></td><td><strong>All Year Cooling &amp; Plumbing (TARGET)</strong></td><td><strong>4.8</strong></td><td><strong>2,536</strong></td><td><strong>52 years in business. Ranked #9 in own market. PE backed since 2024.</strong></td></tr>
 <tr><td>10</td><td>Expert Cool AC Services</td><td>5.0</td><td>314</td><td>Smaller, perfect rating</td></tr>
 </tbody></table>
-</section>
-<section><h2><span class="n">04</span> Broken and Improvable Items</h2>
+<table><thead><tr><th>Metric</th><th>AYR</th><th>Art Plumbing</th><th>Snyder AC</th></tr></thead><tbody>
+<tr><td>Google Rating</td><td>4.8</td><td>4.8</td><td>4.7</td></tr>
+<tr><td>Google Reviews</td><td>~2,536</td><td>10,560</td><td>6,260 (29K total)</td></tr>
+<tr><td>Review Gap</td><td>Baseline</td><td>4x AYR</td><td>11x AYR (total)</td></tr>
+<tr><td>Map Pack Rank</td><td>#9</td><td>#8</td><td>#2</td></tr>
+<tr><td>Organic Ranking</td><td>Not on Page 1</td><td>Page 1</td><td>Page 1</td></tr>
+<tr><td>Paid Advertising</td><td>Google + MS + Meta (GTM disabled)</td><td>Aggressive</td><td>Aggressive</td></tr>
+<tr><td>Measurement Layer</td><td>BROKEN (GTM commented out)</td><td>Presumably functional</td><td>Presumably functional</td></tr>
+</tbody></table></section>
+<section><h2><span class="num">05</span> Broken and Improvable Items</h2><p class="lead">37 issues total: 5 Critical, 11 High, 15 Medium, 6 Low. Merged from all 4 sources.</p>
 <div>
-<div class="is"><div class="sev sv-c">Critical</div><div class="ib"><div class="it">NAP Phone Inconsistency (5+ different numbers)</div><div class="ir"><strong>Fix:</strong> Standardize one primary phone number across all directories. GHL confirms only 52% of 31 citations are accurate.</div></div></div>
-<div class="is"><div class="sev sv-c">Critical</div><div class="ib"><div class="it">Not ranking on Page 1 for any core HVAC keyword in home market</div><div class="ir"><strong>Fix:</strong> Prioritize local SEO for "AC repair Coral Springs", "HVAC Coral Springs". Optimize landing page. Build city specific backlinks.</div></div></div>
-<div class="is"><div class="sev sv-c">Critical</div><div class="ib"><div class="it">Mobile page speed 18.2 seconds (GHL confirmed)</div><div class="ir"><strong>Fix:</strong> Catastrophic. Global avg is 0.2s. Compress images, remove duplicated carousels, minify assets, implement caching. Prerequisite for all SEO work.</div></div></div>
-<div class="is"><div class="sev sv-c">Critical</div><div class="ib"><div class="it">Core Web Vitals near zero (0% page speed, 6% LCP, 6% INP, 3% SEO)</div><div class="ir"><strong>Fix:</strong> Google uses Core Web Vitals as ranking signal. Near zero means active penalty. Technical SEO sprint needed.</div></div></div>
-<div class="is"><div class="sev sv-c">Critical</div><div class="ib"><div class="it">Review volume 3x to 11x lower than top competitors</div><div class="ir"><strong>Fix:</strong> Deploy systematic review generation (post service SMS, GBP review link, tech asks). Target 50+ new Google reviews per month.</div></div></div>
-<div class="is"><div class="sev sv-h">High</div><div class="ib"><div class="it">Hours inconsistency (site says 24/7, directories show 7:30 AM to 10 PM)</div><div class="ir"><strong>Fix:</strong> Sync hours across GBP, Yelp, BBB, Angi, and website.</div></div></div>
-<div class="is"><div class="sev sv-h">High</div><div class="ib"><div class="it">No live chat or AI chat widget on website</div><div class="ir"><strong>Fix:</strong> Add 24/7 AI chat for after hours lead capture. Reviews mention phone not being answered.</div></div></div>
-<div class="is"><div class="sev sv-h">High</div><div class="ib"><div class="it">Yelp rating (4.0) significantly lower than Google (4.7)</div><div class="ir"><strong>Fix:</strong> Solicit Yelp reviews from satisfied customers. Respond to all Yelp reviews.</div></div></div>
-<div class="is"><div class="sev sv-h">High</div><div class="ib"><div class="it">BBB customer review average is 3.38 stars (16 reviews)</div><div class="ir"><strong>Fix:</strong> Drive satisfied customers to BBB reviews. 3.38 is a red flag for anyone checking BBB.</div></div></div>
-<div class="is"><div class="sev sv-h">High</div><div class="ib"><div class="it">Recurring negative theme: post sale service and warranty breakdowns</div><div class="ir"><strong>Fix:</strong> Operational issue impacting reputation. Implement post sale follow up and warranty claim tracking.</div></div></div>
-<div class="is"><div class="sev sv-h">High</div><div class="ib"><div class="it">Instagram engagement at 0.1 to 0.3% despite 1,468 posts</div><div class="ir"><strong>Fix:</strong> Shift from volume to quality. Focus on Reels with hooks and trending audio.</div></div></div>
-<div class="is"><div class="sev sv-h">High</div><div class="ib"><div class="it">Plumbing service line has zero keyword presence</div><div class="ir"><strong>Fix:</strong> Build plumbing landing pages. Target "plumber Coral Springs", "drain cleaning Coral Springs".</div></div></div>
-<div class="is"><div class="sev sv-md">Medium</div><div class="ib"><div class="it">AI crawlers fully blocked in robots.txt</div><div class="ir"><strong>Fix:</strong> Selectively unblock AI crawlers. Being invisible in AI search will cost leads.</div></div></div>
-<div class="is"><div class="sev sv-md">Medium</div><div class="ib"><div class="it">Test/junk pages in sitemap (/dummy-test-page/, /education/)</div><div class="ir"><strong>Fix:</strong> Remove or noindex. Signals poor site hygiene.</div></div></div>
-<div class="is"><div class="sev sv-md">Medium</div><div class="ib"><div class="it">YouTube channel dormant for ~1 year (335 subscribers)</div><div class="ir"><strong>Fix:</strong> Resume educational content. YouTube is a search engine with long tail value.</div></div></div>
-<div class="is"><div class="sev sv-md">Medium</div><div class="ib"><div class="it">Schema markup (LocalBusiness, HVAC) not confirmed</div><div class="ir"><strong>Fix:</strong> Verify JSON-LD via Google Rich Results Test. Add HVACBusiness schema if missing.</div></div></div>
-<div class="is"><div class="sev sv-md">Medium</div><div class="ib"><div class="it">TikTok presence abandoned (10 followers)</div><div class="ir"><strong>Fix:</strong> Commit to TikTok or remove profile. Dead profile looks worse than no profile.</div></div></div>
-<div class="is"><div class="sev sv-md">Medium</div><div class="ib"><div class="it">Blog padded with hundreds of thin 2022 promotional posts</div><div class="ir"><strong>Fix:</strong> Audit and noindex thin posts. They dilute content quality signals.</div></div></div>
-<div class="is"><div class="sev sv-l">Low</div><div class="ib"><div class="it">Not listed on Thumbtack or Yellow Pages</div><div class="ir"><strong>Fix:</strong> Create listings. Thumbtack drives leads. Yellow Pages adds citation consistency.</div></div></div>
-<div class="is"><div class="sev sv-l">Low</div><div class="ib"><div class="it">LinkedIn used only for recruiting (991 followers)</div><div class="ir"><strong>Fix:</strong> Post company updates and industry content. Builds B2B credibility.</div></div></div>
-<div class="is"><div class="sev sv-l">Low</div><div class="ib"><div class="it">Website widget shows stale Google review count (1,873 vs actual ~2,580)</div><div class="ir"><strong>Fix:</strong> Update review widget to pull live data. Underselling reputation.</div></div></div>
-</div>
+<div class="issue-item"><div class="issue-sev sev-critical">Critical</div><div class="issue-body"><div class="issue-title">GTM container disabled sitewide + no Google Ads conversion tag</div><div class="issue-rec"><strong>Fix:</strong> Uncomment GTM-TWJN4RX today. Re verify every conversion action. Ask: "Who turned off your GTM container, and what is your cost per booked job right now?"</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-critical">Critical</div><div class="issue-body"><div class="issue-title">AWS access key exposed in public page source</div><div class="issue-rec"><strong>Fix:</strong> Rotate AKIAZG22STRSSPVXTPYG immediately. Strip S3 URL from Organization schema. On every page load.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-critical">Critical</div><div class="issue-body"><div class="issue-title">167 of 276 location URLs redirect while still in sitemap</div><div class="issue-rec"><strong>Fix:</strong> Rebuild city+service landing page layer or purge redirecting URLs from sitemap. Cannot rank for "[service] in [city]" across 167 combinations.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-critical">Critical</div><div class="issue-body"><div class="issue-title">Review schema fabricated: hardcoded 5.0/100 vs real 4.8/2,536</div><div class="issue-rec"><strong>Fix:</strong> Delete malformed JSON-LD block. Replace with valid HVACBusiness schema. Manual action risk. 56.9 KB dead weight.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-critical">Critical</div><div class="issue-body"><div class="issue-title">NAP phone inconsistency: 6+ different numbers</div><div class="issue-rec"><strong>Fix:</strong> Choose one CallTrackingMetrics primary for NAP. Re push citations. GHL confirms 48% of 31 directories wrong.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">ServiceTitan scheduler commented out, Netic AI replacement unmeasured</div><div class="issue-rec"><strong>Fix:</strong> Confirm intentional. Measure Netic booking completion rate vs ST baseline.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">Mobile "Book Now" CTA dead: no href, no click handler</div><div class="issue-rec"><strong>Fix:</strong> Wire to Netic scheduler or remove. Dead CTA on highest intent button.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">AI crawlers fully blocked (GPTBot, ChatGPT-User, CCBot, ClaudeBot, Google-Extended)</div><div class="issue-rec"><strong>Fix:</strong> Unblock AI crawlers. Invisible to ChatGPT, Claude, Perplexity, Google AI Overviews.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">No LocalBusiness or HVACBusiness schema sitewide</div><div class="issue-rec"><strong>Fix:</strong> Deploy HVACBusiness schema with geo, openingHours, areaServed, priceRange.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">Two GA4 properties firing simultaneously</div><div class="issue-rec"><strong>Fix:</strong> Pick one (G-4Z5V1684DG or G-RBF72197YX). Remove the other.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">Duplicate Yelp listings: 4.0/315 + 4.4/247 splitting equity</div><div class="issue-rec"><strong>Fix:</strong> File Yelp duplicate merge request.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">ConsumerAffairs: 2.9/5 from 821 reviews</div><div class="issue-rec"><strong>Fix:</strong> Major red flag. Deploy reputation recovery. Investigate why sentiment is so much worse than Google.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">Warranty non fulfillment + no shows recurring across all platforms</div><div class="issue-rec"><strong>Fix:</strong> Audit warranty workflow. Instrument on time arrival in ServiceTitan. Tie CSR/dispatch scorecards to it.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">Review volume 3x to 11x lower than competitors</div><div class="issue-rec"><strong>Fix:</strong> Systematic review generation (post service SMS, GBP link, tech asks). Target 50+/month.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-high">High</div><div class="issue-body"><div class="issue-title">No live chat or AI chat widget</div><div class="issue-rec"><strong>Fix:</strong> Add 24/7 AI chat. Reviews mention phone not answered.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-medium">Medium</div><div class="issue-body"><div class="issue-title">Hours conflict: site 24/7 vs GBP 7:30am 10pm</div><div class="issue-rec"><strong>Fix:</strong> Align across GBP, Yelp, BBB, Angi, website.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-medium">Medium</div><div class="issue-body"><div class="issue-title">Bootstrap x2 (316KB) + GA4 x2 (1.14MB) + 104 images zero lazy load</div><div class="issue-rec"><strong>Fix:</strong> Drop duplicates. Enable lazy loading. Convert to WebP. Add CDN.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-medium">Medium</div><div class="issue-body"><div class="issue-title">robots.txt over blocks /?* and /page/*</div><div class="issue-rec"><strong>Fix:</strong> Narrow /?* rule. Remove /page/* block.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-medium">Medium</div><div class="issue-body"><div class="issue-title">No HVAC, heating, emergency AC, commercial, or manufacturer pages</div><div class="issue-rec"><strong>Fix:</strong> Build these pages. They convert well and are cheap to rank.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-medium">Medium</div><div class="issue-body"><div class="issue-title">No FAQPage schema + no Spanish hreflang</div><div class="issue-rec"><strong>Fix:</strong> Add FAQPage schema. Build Spanish tree or remove orphan page.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-medium">Medium</div><div class="issue-body"><div class="issue-title">"Family Owned" claim misleading post acquisition</div><div class="issue-rec"><strong>Fix:</strong> Update messaging. "Family operated" may be defensible, "family owned" is not.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-medium">Medium</div><div class="issue-body"><div class="issue-title">Meta description omits Coral Springs, YouTube dormant, TikTok/X/Pinterest dead</div><div class="issue-rec"><strong>Fix:</strong> Rewrite meta. Kill dead platforms. Focus on FB + YouTube.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-medium">Medium</div><div class="issue-body"><div class="issue-title">License numbers inconsistent + Instagram 0.1% engagement</div><div class="issue-rec"><strong>Fix:</strong> Standardize licenses. Shift IG from volume to quality Reels.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-low">Low</div><div class="issue-body"><div class="issue-title">5+ brand name variants, conflicting geo coordinates, stale review widget</div><div class="issue-rec"><strong>Fix:</strong> Standardize name, coordinates, and review widget across all citations.</div></div></div>
+<div class="issue-item"><div class="issue-sev sev-low">Low</div><div class="issue-body"><div class="issue-title">Not on Thumbtack/Yellow Pages, LinkedIn recruiting only, 4 images missing alt</div><div class="issue-rec"><strong>Fix:</strong> Create listings. Turn LinkedIn into recruiting channel. Add alt text.</div></div></div>
+</div></section>
+<section><h2><span class="num">06</span> Top 5 Immediate Opportunities</h2><p class="lead">Highest ROI actions ranked by impact and speed.</p>
+<div class="opp-card"><div class="opp-num">Opportunity 01</div><h3>Re Enable GTM and Restore Measurement Layer (Emergency)</h3><p>GTM-TWJN4RX is HTML commented out on every page. No Google Ads conversion tag. Spending real money on Google, Microsoft, and Meta with measurement switched off. Uncomment GTM today, re verify conversions, establish cost per booked job. Highest priority: they are flying blind on real ad spend.</p><div class="impact">Impact: Critical | Timeline: 1 day</div></div>
+<div class="opp-card"><div class="opp-num">Opportunity 02</div><h3>Rotate Exposed AWS Key and Strip from Page Source</h3><p>AKIAZG22STRSSPVXTPYG and presigned S3 signature in public HTML on every page load. Rotate immediately. Have Simple SEO Group remove S3 URL from schema. Costs nothing, proves you looked at their source code.</p><div class="impact">Impact: Critical | Timeline: 1 day</div></div>
+<div class="opp-card"><div class="opp-num">Opportunity 03</div><h3>Rebuild Location Page Layer and Fix Technical SEO</h3><p>167 of 276 location URLs redirect while still in sitemap. City+service layer collapsed. Combined with: fabricated review schema (manual action risk), no LocalBusiness schema, AI crawlers blocked, robots.txt over blocking, 6+ phone numbers, 52% listing accuracy. Fix technical foundation first, then rebuild location pages. This is the path from #9 to page 1.</p><div class="impact">Impact: High | Timeline: 2 to 4 months</div></div>
+<div class="opp-card"><div class="opp-num">Opportunity 04</div><h3>Deploy Systematic Review Generation</h3><p>AYR has ~2,536 Google reviews. Snyder has 29,000 total. Art has 10,560. Implement post service SMS review requests, GBP review link in email signatures, tech driven asks. Target 50+/month. Also: file Yelp duplicate merge, address ConsumerAffairs 2.9/821 crisis.</p><div class="impact">Impact: High | Timeline: Ongoing</div></div>
+<div class="opp-card"><div class="opp-num">Opportunity 05</div><h3>Add 24/7 AI Chat Widget and Fix Dead Mobile Book Now CTA</h3><p>Reviews repeatedly mention phones not answered. GHL confirms no chat widget. Claude confirms mobile "Book Now" is dead (no href). AI chat captures after hours leads. Wire mobile Book Now to Netic scheduler. Addresses biggest reputation weakness while adding lead channel.</p><div class="impact">Impact: Medium High | Timeline: 1 to 2 weeks</div></div>
 </section>
-<section><h2><span class="n">05</span> Top 5 Immediate Opportunities</h2>
-<div class="oc"><div class="on">Opportunity 01</div><h3>Fix Website Speed and Core Web Vitals (Emergency)</h3><p>GHL confirmed 18.2 second mobile load time with Core Web Vitals at 0 to 6%. This is actively suppressing Google rankings. No amount of content or backlinks will help if the site is this slow. Compress images, remove duplicated carousels, minify assets, implement caching. This is the highest priority fix because it is a prerequisite for all other SEO work.</p><div class="im">Impact: Critical | Timeline: 1 to 2 weeks</div></div>
-<div class="oc"><div class="on">Opportunity 02</div><h3>Standardize NAP and Fix Local SEO Foundation</h3><p>Consolidate to one primary phone number across all 31+ directories. GHL confirms 48% of citations are wrong. Once citations are clean, their 2,580+ reviews and 52 year history become a much stronger ranking signal. This directly impacts their #9 map pack ranking.</p><div class="im">Impact: High | Timeline: 2 to 4 weeks</div></div>
-<div class="oc"><div class="on">Opportunity 03</div><h3>Capture Page 1 for Core Coral Springs HVAC Keywords</h3><p>They have a dedicated Coral Springs landing page that is indexed but not ranking. With speed fixed and NAP clean, optimize for "AC repair Coral Springs", "HVAC Coral Springs", "AC installation Coral Springs". Competitors Art Plumbing (#8) and Snyder (#2) are beatable on content quality if the technical foundation is fixed.</p><div class="im">Impact: High | Timeline: 3 to 6 months</div></div>
-<div class="oc"><div class="on">Opportunity 04</div><h3>Deploy Systematic Review Generation to Close the Review Gap</h3><p>AYR has ~2,580 Google reviews. Snyder has 29,000 total. Art has 10,560. Review volume is a primary local SEO and trust signal. Implement post service SMS review requests, GBP review link in email signatures, tech driven review asks. Target 50+ per month. This is the long game moat that compounds.</p><div class="im">Impact: High | Timeline: Ongoing</div></div>
-<div class="oc"><div class="on">Opportunity 05</div><h3>Add 24/7 AI Chat Widget to Capture After Hours Leads</h3><p>Their own negative reviews repeatedly mention phones not being answered and callbacks not returned. GHL confirms no chat widget. A 24/7 AI chat captures leads when humans cannot, books appointments, and filters urgent vs non urgent requests. Directly addresses their biggest reputation weakness while adding a new lead channel.</p><div class="im">Impact: Medium High | Timeline: 1 to 2 weeks</div></div>
-</section>
 </div>
-<div class="ft"><p>ALL YEAR COOLING | DIGITAL MARKETING DOSSIER | PREPARED SEPTEMBER 4, 2026 | MERGED WITH GHL AUDIT DATA</p><p style="margin-top:6px">Sources: BBB, Trane, Yelp, Angi, HomeAdvisor, Google (via GHL + Trane), Meta, Instagram, YouTube, LinkedIn, TikTok, X, PitchBook, RocketReach, GHL Marketing Audit Report, website inspection</p><p style="margin-top:6px">Powered by <a href="https://boostconhq.com" style="color:var(--a);text-decoration:none">BoostCon</a> | AI Consulting for Home Services</p></div>
+<div class="footer"><p>ALL YEAR COOLING &amp; PLUMBING | DIGITAL MARKETING DOSSIER | PREPARED SEPTEMBER 4, 2026 | MERGED FROM 4 AUDIT SOURCES</p><p style="margin-top:8px">Sources: Littlebird web audit, GHL Marketing Audit Report, Claude source code inspection, Chat public data audit. BBB, Trane, Yelp, Angi, HomeAdvisor, ConsumerAffairs, Birdeye, Google (GHL + Trane + GBP mirrors), Meta, Instagram, YouTube, LinkedIn, TikTok, X, Threads, Pinterest, Nextdoor, PitchBook, RocketReach, SEOlium, SunBiz, website source inspection.</p><p style="margin-top:8px">Powered by <a href="https://boostconhq.com">BoostCon</a> | AI Consulting for Home Services</p></div>
 </body></html>
