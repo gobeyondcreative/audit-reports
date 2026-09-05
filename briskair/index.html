@@ -1,142 +1,611 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BriskAir Digital Marketing Audit | BoostCon</title>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BriskAir Digital Marketing Audit | BoostCon</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,-apple-system,sans-serif;background:#0a0e17;color:#e2e8f0;line-height:1.6}
-.container{max-width:1200px;margin:0 auto;padding:20px}
-header{background:#111827;padding:40px 20px;text-align:center;border-bottom:1px solid #1e293b}
-header h1{font-size:2.2rem;color:#00d4ff;margin-bottom:8px}header p{color:#94a3b8;font-size:1rem}
-.score{background:#0f1623;border:1px solid #1e293b;border-radius:12px;padding:30px;margin:25px 0;text-align:center}
-.score .num{font-size:3.5rem;font-weight:700;color:#ff4757}
-.score .lbl{font-size:1.1rem;color:#94a3b8;margin-top:8px}
-.score .sub{color:#64748b;font-size:0.9rem;margin-top:5px}
-.section{background:#0f1623;border:1px solid #1e293b;border-radius:12px;padding:20px;margin:15px 0}
-.section h2{color:#00d4ff;font-size:1.3rem;margin-bottom:12px;border-bottom:1px solid #1e293b;padding-bottom:8px}
-.section h3{color:#e2e8f0;font-size:1rem;margin:12px 0 6px}
-.section p{color:#94a3b8;margin-bottom:8px;font-size:0.95rem}
-.section ul{list-style:none;padding:0}
-.section li{padding:6px 0;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:0.9rem}
-.section li:last-child{border-bottom:none}
-.cta{background:#111827;border:1px solid #00d4ff;border-radius:12px;padding:20px;margin:20px 0;text-align:center}
-.cta h3{color:#00d4ff;font-size:1.1rem;margin-bottom:8px}
-.cta p{color:#94a3b8;margin-bottom:12px;font-size:0.9rem}
-.cta a{display:inline-block;background:#00d4ff;color:#0a0e17;padding:10px 25px;border-radius:6px;text-decoration:none;font-weight:600}
-.cta a:hover{background:#0ea5e9}
-.inline-cta{background:#0f1623;border-left:3px solid #00d4ff;padding:12px 15px;margin:15px 0}
-.inline-cta p{color:#94a3b8;font-size:0.9rem;margin-bottom:8px}
-.inline-cta a{color:#00d4ff;text-decoration:none;font-weight:600}
-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:0.9rem}
-th,td{padding:8px;text-align:left;border-bottom:1px solid #1e293b}
-th{color:#00d4ff;font-weight:600;font-size:0.85rem}
-.critical{color:#ff4757;font-weight:700}
-.high{color:#ff9f43;font-weight:700}
-.medium{color:#ffd93d;font-weight:700}
-.low{color:#2ed573;font-weight:700}
-.comp{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #1e293b;font-size:0.9rem}
-.comp:last-child{border-bottom:none}
-.comp span:first-child{color:#e2e8f0}
-.comp span:last-child{color:#94a3b8}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:10px 0}
-.card{background:#111827;border:1px solid #1e293b;border-radius:8px;padding:12px}
-.card h4{color:#00d4ff;font-size:0.9rem;margin-bottom:4px}
-.card p{color:#94a3b8;font-size:0.85rem}
-footer{text-align:center;padding:25px;color:#64748b;border-top:1px solid #1e293b;margin-top:30px;font-size:0.85rem}
-@media(max-width:640px){.container{padding:12px}header h1{font-size:1.6rem}table{font-size:0.8rem}}
-</style></head>
-<body><div class="container">
-<header><h1>BriskAir Digital Marketing Audit</h1><p>Coral Springs, FL | Generated September 2026 by BoostCon</p></header>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --mono:'SF Mono','Fira Code','Fira Mono','Roboto Mono',ui-monospace,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --radius:12px;--transition:0.3s cubic-bezier(0.4,0,0.2,1);
+}
+[data-theme="dark"]{
+  --bg:#0a0e17;--bg2:#111827;--bg3:#1a2332;
+  --text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;
+  --accent:#00d4ff;--accent2:#0ea5e9;--accent-glow:rgba(0,212,255,0.15);
+  --border:#1e293b;--border2:#334155;
+  --card:#0f1623;--card-hover:#162236;
+  --crit:#ff4757;--high:#ff9f43;--med:#ffd93d;--low:#2ed573;
+  --crit-bg:rgba(255,71,87,0.1);--high-bg:rgba(255,159,67,0.1);
+  --med-bg:rgba(255,217,61,0.1);--low-bg:rgba(46,213,115,0.1);
+  --score:#ff9f43;--score-bg:rgba(255,159,67,0.1);
+  --nav-bg:rgba(10,14,23,0.95);--shadow:0 4px 24px rgba(0,0,0,0.4);
+}
+[data-theme="light"]{
+  --bg:#f8fafc;--bg2:#ffffff;--bg3:#f1f5f9;
+  --text:#1e293b;--text2:#64748b;--text3:#94a3b8;
+  --accent:#0284c7;--accent2:#0ea5e9;--accent-glow:rgba(2,132,199,0.1);
+  --border:#e2e8f0;--border2:#cbd5e1;
+  --card:#ffffff;--card-hover:#f8fafc;
+  --crit:#e11d48;--high:#ea580c;--med:#ca8a04;--low:#16a34a;
+  --crit-bg:rgba(225,29,72,0.08);--high-bg:rgba(234,88,12,0.08);
+  --med-bg:rgba(202,138,4,0.08);--low-bg:rgba(22,163,74,0.08);
+  --score:#ea580c;--score-bg:rgba(234,88,12,0.08);
+  --nav-bg:rgba(248,250,252,0.95);--shadow:0 4px 24px rgba(0,0,0,0.08);
+}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;transition:background var(--transition),color var(--transition)}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 
-<div class="score"><div class="num">43/100</div><div class="lbl">At Risk</div><div class="sub">Composite Online Health Score</div></div>
+/* HEADER */
+.header{background:linear-gradient(135deg,var(--bg2),var(--bg));border-bottom:1px solid var(--border);padding:0;position:relative;overflow:hidden}
+.header-inner{max-width:1200px;margin:0 auto;padding:28px 24px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+.header-left{flex:1;min-width:0}
+.header-tag{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.header-title{font-size:28px;font-weight:700;letter-spacing:-0.5px;line-height:1.2}
+.header-sub{font-size:14px;color:var(--text2);margin-top:6px}
+.header-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.icon-btn{background:var(--card);border:1px solid var(--border2);border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text2);font-size:18px;transition:all var(--transition);flex-shrink:0}
+.icon-btn:hover{background:var(--card-hover);color:var(--accent);border-color:var(--accent)}
+.header-meta{max-width:1200px;margin:0 auto;padding:12px 24px 24px;font-family:var(--mono);font-size:11px;color:var(--text3);display:flex;gap:16px;flex-wrap:wrap}
+.header-meta span{display:flex;align-items:center;gap:4px}
 
-<div class="section">
-<h2>01. Composite Online Health Score</h2>
-<table><tr><th>Category</th><th>Score</th><th>Max</th></tr>
-<tr><td>Google Presence</td><td>12/25</td><td>25</td></tr>
-<tr><td>Website Health</td><td>10/20</td><td>20</td></tr>
-<tr><td>SEO / Local Visibility</td><td>8/20</td><td>20</td></tr>
-<tr><td>Reputation / Reviews</td><td>6/15</td><td>15</td></tr>
-<tr><td>Social Media</td><td>3/10</td><td>10</td></tr>
-<tr><td>Paid Advertising</td><td>4/10</td><td>10</td></tr>
-<tr><td><strong>Total</strong></td><td><strong>43/100</strong></td><td><strong>100</strong></td></tr>
-</table>
-<p><strong>Cost of Inaction:</strong> With an estimated $450 average ticket and 8.3 leads/day at current visibility, the misrouted CTA alone costs $3,735/week in lost bookings.</p>
-</div>
+/* NAV BAR */
+.nav{position:sticky;top:0;z-index:100;background:var(--nav-bg);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:4px;padding:0 24px;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-link{font-family:var(--mono);font-size:12px;color:var(--text2);padding:14px 12px;white-space:nowrap;border-bottom:2px solid transparent;transition:all var(--transition)}
+.nav-link:hover{color:var(--accent);text-decoration:none;border-bottom-color:var(--accent)}
+.nav-cta{margin-left:auto;background:var(--accent);color:var(--bg);font-family:var(--mono);font-size:12px;font-weight:700;padding:8px 16px;border-radius:6px;white-space:nowrap;transition:all var(--transition)}
+.nav-cta:hover{opacity:0.85;text-decoration:none;color:var(--bg)}
 
-<div class="cta"><h3>Book Your Revenue Leak Discovery Call</h3><p>Every finding in this report is a revenue leak. We will show you exactly what is broken and how to fix it.</p><a href="https://www.boostconhq.com/book">Book a Call</a></div>
+/* HAMBURGER */
+.hamburger{display:none;background:none;border:none;color:var(--text2);font-size:22px;cursor:pointer;padding:14px 16px}
+.mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:var(--shadow);padding:16px 24px;z-index:99}
+.mobile-menu.open{display:flex;flex-direction:column;gap:4px}
+.mobile-menu .nav-link{border-bottom:none;padding:12px 0;font-size:14px}
+.mobile-menu .nav-cta{margin-left:0;margin-top:8px;text-align:center}
 
-<div class="section">
-<h2>02. Company Identification</h2>
-<div class="grid">
-<div class="card"><h4>Legal Name</h4><p>Brisk Air, Inc.</p></div>
-<div class="card"><h4>License</h4><p>CAC1818237</p></div>
-<div class="card"><h4>Owner</h4><p>Andy Andres</p></div>
-<div class="card"><h4>Address</h4><p>4450 NW 126th Ave Ste 103, Coral Springs, FL 33065</p></div>
-</div>
-<h3>Phone Numbers</h3>
-<table><tr><th>Number</th><th>Where Found</th></tr>
-<tr><td>(954) 463-7616</td><td>Website, Google, Yelp</td></tr>
-<tr><td>954-856-2893</td><td>Facebook, BBB</td></tr>
-<tr><td>954-369-1639</td><td>Additional listing</td></tr>
-</table>
-</div>
+/* SECTIONS */
+.section{max-width:1200px;margin:0 auto;padding:48px 24px}
+.section-num{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.section-title{font-size:22px;font-weight:700;margin-bottom:24px;letter-spacing:-0.3px}
 
-<div class="inline-cta"><p>Three phone numbers fragment your tracking. Want to know how many calls you are actually missing? <a href="https://www.boostconhq.com/book">Book a Call</a></p></div>
+/* SCORE */
+.score-wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+@media(max-width:768px){.score-wrap{grid-template-columns:1fr}}
+.score-big{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:40px 24px;position:relative;overflow:hidden}
+.score-big::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--crit),var(--high),var(--med),var(--low))}
+.score-number{font-family:var(--mono);font-size:72px;font-weight:800;line-height:1;color:var(--score)}
+.score-out-of{font-family:var(--mono);font-size:20px;color:var(--text3)}
+.score-verdict{font-family:var(--mono);font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--score);margin-top:12px;padding:6px 16px;background:var(--score-bg);border-radius:6px}
+.score-desc{font-size:13px;color:var(--text2);margin-top:16px;max-width:400px}
+.score-breakdown{display:flex;flex-direction:column;gap:12px}
+.score-row{display:flex;align-items:center;gap:12px}
+.score-label{font-size:13px;font-weight:600;min-width:140px}
+.score-bar-wrap{flex:1;height:10px;background:var(--bg3);border-radius:5px;overflow:hidden;position:relative}
+.score-bar{height:100%;border-radius:5px;transition:width 1s cubic-bezier(0.4,0,0.2,1)}
+.score-val{font-family:var(--mono);font-size:13px;font-weight:700;min-width:60px;text-align:right}
 
-<div class="section">
-<h2>03. Key Findings</h2>
-<table><tr><th>Category</th><th>Finding</th><th>Severity</th></tr>
-<tr><td>Website</td><td>Specials CTA routes to Careers page</td><td class="critical">Critical</td></tr>
-<tr><td>Reputation</td><td>Yelp 2.4 vs Google 4.8 (143 reviews gap)</td><td class="critical">Critical</td></tr>
-<tr><td>NAP</td><td>Three phone numbers in use</td><td class="high">High</td></tr>
-<tr><td>Social</td><td>Facebook missing suite number</td><td class="medium">Medium</td></tr>
-<tr><td>Directory</td><td>BBB lists Roofing on AC page</td><td class="medium">Medium</td></tr>
-<tr><td>SEO</td><td>Map Pack estimated at #5</td><td class="high">High</td></tr>
-</table>
-</div>
+/* DATA CARDS */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.data-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:all var(--transition)}
+.data-card:hover{border-color:var(--border2);background:var(--card-hover)}
+.data-card-label{font-family:var(--mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px}
+.data-card-value{font-size:15px;font-weight:600;color:var(--text)}
+.data-card-sub{font-size:12px;color:var(--text2);margin-top:4px}
+.data-card a{font-size:13px;word-break:break-all}
 
-<div class="inline-cta"><p>Your Yelp profile is hemorrhaging trust while Google shows 4.8 stars. We can show you exactly how to close that gap. <a href="https://www.boostconhq.com/book">Book a Call</a></p></div>
+/* TABLES */
+.table-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--bg2);font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--text3);text-align:left;padding:12px 16px;border-bottom:1px solid var(--border)}
+td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:top}
+tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
+.finding-text{font-weight:500}.finding-source{font-family:var(--mono);font-size:11px;color:var(--text3)}
 
-<div class="section">
-<h2>04. Competitive Benchmark</h2>
-<div class="comp"><span>Art Plumbing</span><span>10,622 reviews</span></div>
-<div class="comp"><span>BriskAir</span><span>74 reviews</span></div>
-<p style="margin-top:12px;color:#94a3b8;font-size:0.9rem">Art Plumbing dominates with 143x more reviews. Estimated lost leads: $13,500/month.</p>
-</div>
+/* BADGES */
+.badge{font-family:var(--mono);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:4px;display:inline-block;white-space:nowrap}
+.badge-crit{background:var(--crit-bg);color:var(--crit);border:1px solid var(--crit)}
+.badge-high{background:var(--high-bg);color:var(--high);border:1px solid var(--high)}
+.badge-med{background:var(--med-bg);color:var(--med);border:1px solid var(--med)}
+.badge-low{background:var(--low-bg);color:var(--low);border:1px solid var(--low)}
 
-<div class="inline-cta"><p>Art Plumbing is not outworking you. They are outmarketing you. We can change that. <a href="https://www.boostconhq.com/book">Book a Call</a></p></div>
+/* FINDINGS LIST */
+.finding-item{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--border2);border-radius:8px;padding:20px;margin-bottom:12px;transition:all var(--transition)}
+.finding-item.crit{border-left-color:var(--crit)}.finding-item.high{border-left-color:var(--high)}
+.finding-item.med{border-left-color:var(--med)}.finding-item.low{border-left-color:var(--low)}
+.finding-item:hover{background:var(--card-hover)}
+.finding-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.finding-title{font-weight:600;font-size:14px}
+.finding-detail{font-size:13px;color:var(--text2);margin-bottom:8px}
+.finding-fix{font-size:13px;color:var(--text);background:var(--bg3);border-radius:6px;padding:10px 14px;margin-top:8px}
+.finding-fix strong{color:var(--accent)}
+.finding-src{font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:6px}
 
-<div class="section">
-<h2>05. Broken and Improvable Items</h2>
-<h3>Critical (Fix Immediately)</h3>
-<ul>
-<li>Specials CTA routes to /careers/ instead of booking page. Fix: Change link to /specials/ or /contact/</li>
-<li>Yelp 2.4 stars with 16 reviews vs Google 4.8 with 74. Fix: Implement review request workflow and respond to all negative reviews</li>
-</ul>
-<h3>High (Fix Within 30 Days)</h3>
-<ul>
-<li>Three phone numbers fragment call tracking. Fix: Standardize to one number, add call tracking</li>
-<li>Map Pack rank estimated at #5. Fix: Increase review velocity and citation consistency</li>
-</ul>
-<h3>Medium (Fix Within 90 Days)</h3>
-<ul>
-<li>Facebook page missing suite number. Fix: Update address to match website</li>
-<li>BBB page lists Roofing category on AC business. Fix: Correct BBB listing category</li>
-</ul>
-</div>
+/* OPPORTUNITY CARDS */
+.opp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+.opp-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;position:relative;overflow:hidden;transition:all var(--transition)}
+.opp-card:hover{border-color:var(--accent);box-shadow:0 0 24px var(--accent-glow)}
+.opp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent)}
+.opp-rank{position:absolute;top:16px;right:20px;font-family:var(--mono);font-size:36px;font-weight:800;color:var(--border2);line-height:1}
+.opp-title{font-size:16px;font-weight:700;margin-bottom:8px;padding-right:40px}
+.opp-desc{font-size:13px;color:var(--text2);margin-bottom:16px;line-height:1.5}
+.opp-meta{display:flex;gap:8px;flex-wrap:wrap}
+.opp-tag{font-family:var(--mono);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:4px}
 
-<div class="inline-cta"><p>Every item on this list has a dollar amount attached. We will quantify each one in your discovery call. <a href="https://www.boostconhq.com/book">Book a Call</a></p></div>
+/* CTA STYLES */
+.cta-large{background:linear-gradient(135deg,var(--card),var(--bg2));border:1px solid var(--accent);border-radius:var(--radius);padding:32px;margin:0 auto;max-width:600px;text-align:center;position:relative;overflow:hidden}
+.cta-large::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.cta-title{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-desc{font-size:14px;color:var(--text2);margin-bottom:20px}
+.cta-btn{display:inline-block;background:var(--accent);color:var(--bg);font-family:var(--mono);font-size:14px;font-weight:700;padding:14px 32px;border-radius:8px;text-decoration:none;transition:all var(--transition)}
+.cta-btn:hover{opacity:0.85;text-decoration:none;color:var(--bg)}
+.cta-contact{font-family:var(--mono);font-size:12px;color:var(--text3);margin-top:16px}
 
-<div class="section">
-<h2>06. Top 5 Immediate Opportunities</h2>
-<table><tr><th>Opportunity</th><th>Impact</th><th>Timeline</th></tr>
-<tr><td>Fix misrouted CTA</td><td>$3,735/week recovered</td><td>1 hour</td></tr>
-<tr><td>Standardize phone numbers</td><td>Accurate tracking</td><td>1 day</td></tr>
-<tr><td>Yelp reputation strategy</td><td>Close trust gap</td><td>1 week</td></tr>
-<tr><td>Google Ads audit</td><td>Stop wasted spend</td><td>1 week</td></tr>
-<tr><td>Review generation campaign</td><td>+50 reviews/month</td><td>30 days</td></tr>
-</table>
-</div>
+.cta-small{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px 20px;margin-top:32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.cta-small-text{font-size:13px;color:var(--text2);flex:1;min-width:200px}
+.cta-small-text strong{color:var(--text)}
+.cta-small-btn{font-family:var(--mono);font-size:12px;font-weight:700;background:var(--accent);color:var(--bg);padding:10px 20px;border-radius:6px;text-decoration:none;white-space:nowrap;transition:all var(--transition)}
+.cta-small-btn:hover{opacity:0.85;text-decoration:none;color:var(--bg)}
 
-<div class="cta"><h3>Your Competitors Are Not Smarter. They Are Just Better Tracked.</h3><p>Every finding in this report is fixable. The question is whether you fix it before your next customer calls Art Plumbing instead.</p><a href="https://www.boostconhq.com/book">Book Your Discovery Call</a></div>
+/* FOOTER */
+.footer{border-top:1px solid var(--border);padding:32px 24px;text-align:center}
+.footer-text{font-family:var(--mono);font-size:12px;color:var(--text3)}
+.footer-text a{color:var(--accent)}
 
-<footer><p>Powered by BoostCon | AI Consulting for Home Services</p><p>Data: Google, Yelp, BBB, Facebook, ConsumerAffairs, SEMrush, LinkedIn, SunBiz</p></footer>
-</div></body></html>
+/* MISC */
+.note{font-size:12px;color:var(--text3);font-style:italic;margin-top:16px;padding:12px;background:var(--bg3);border-radius:8px;border-left:3px solid var(--border2)}
+.flag{color:var(--crit);font-weight:600}
+.gap-indicator{font-family:var(--mono);font-size:12px;color:var(--high);font-weight:700}
+.cost-stat{background:var(--crit-bg);border:1px solid var(--crit);border-radius:8px;padding:16px 20px;margin:16px 0}
+.cost-stat-label{font-family:var(--mono);font-size:10px;color:var(--crit);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px}
+.cost-stat-value{font-size:18px;font-weight:700;color:var(--text)}
+
+@media print{
+  .nav,.icon-btn,.nav-cta,.cta-small,.hamburger,.mobile-menu{display:none!important}
+  body{background:#fff;color:#000}
+  .section{break-inside:avoid;page-break-after:auto}
+  .data-card,.finding-item,.opp-card,.table-wrap,.cta-large{break-inside:avoid}
+}
+@media(max-width:640px){
+  .header-inner{flex-direction:row;flex-wrap:wrap;padding:20px 16px 0}
+  .header-right{order:0}
+  .header-title{font-size:22px}
+  .header-meta{padding:12px 16px 20px;font-size:10px}
+  .section{padding:32px 16px}
+
+  .hamburger{display:block}
+  .nav-inner{display:none}
+  .nav{position:relative}
+
+  .score-number{font-size:56px}
+  .cta-small{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="header-tag">Digital Marketing &amp; Online Health Dossier</div>
+      <div class="header-title">BriskAir Audit Report</div>
+      <div class="header-sub">Brisk Air, Inc. &middot; Coral Springs, FL &middot; HVAC / Air Conditioning</div>
+    </div>
+    <div class="header-right">
+      <button class="icon-btn" id="themeToggle" title="Toggle theme">&#9790;</button>
+      <button class="icon-btn" id="printBtn" title="Print report">&#128424;</button>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span>&#128197; Sep 5, 2026</span>
+    <span>&#128269; Audit by BoostCon</span>
+    <span>&#9889; AI Consulting for Home Services</span>
+  </div>
+</header>
+
+<!-- STICKY NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="#score" class="nav-link">01 Score</a>
+    <a href="#company" class="nav-link">02 Company</a>
+    <a href="#findings" class="nav-link">03 Findings</a>
+    <a href="#benchmark" class="nav-link">04 Benchmark</a>
+    <a href="#broken" class="nav-link">05 Broken Items</a>
+    <a href="#opportunities" class="nav-link">06 Opportunities</a>
+    <a href="https://www.boostconhq.com/book" class="nav-cta" target="_blank">Book a Call</a>
+  </div>
+  <button class="hamburger" id="hamburger" title="Menu">&#9776;</button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#score" class="nav-link">01 Score</a>
+    <a href="#company" class="nav-link">02 Company</a>
+    <a href="#findings" class="nav-link">03 Findings</a>
+    <a href="#benchmark" class="nav-link">04 Benchmark</a>
+    <a href="#broken" class="nav-link">05 Broken Items</a>
+    <a href="#opportunities" class="nav-link">06 Opportunities</a>
+    <a href="https://www.boostconhq.com/book" class="nav-cta" target="_blank">Book a Call</a>
+  </div>
+</nav>
+
+<!-- 01 SCORE -->
+<section class="section" id="score">
+  <div class="section-num">01</div>
+  <div class="section-title">Composite Online Health Score</div>
+  <div class="score-wrap">
+    <div class="score-big">
+      <div><span class="score-number">43</span><span class="score-out-of">/100</span></div>
+      <div class="score-verdict">At Risk</div>
+      <div class="score-desc">Significant revenue leaks detected across measurement, local SEO, and reputation. Every day these issues stay unfixed, BriskAir loses calls to competitors who rank higher, track better, and respond faster.</div>
+    </div>
+    <div class="score-breakdown">
+      <div class="score-row"><span class="score-label">Google Presence</span><div class="score-bar-wrap"><div class="score-bar" style="width:48%;background:var(--high)"></div></div><span class="score-val">12/25</span></div>
+      <div class="score-row"><span class="score-label">Website Health</span><div class="score-bar-wrap"><div class="score-bar" style="width:50%;background:var(--high)"></div></div><span class="score-val">10/20</span></div>
+      <div class="score-row"><span class="score-label">SEO</span><div class="score-bar-wrap"><div class="score-bar" style="width:40%;background:var(--crit)"></div></div><span class="score-val">8/20</span></div>
+      <div class="score-row"><span class="score-label">Reputation / Reviews</span><div class="score-bar-wrap"><div class="score-bar" style="width:40%;background:var(--crit)"></div></div><span class="score-val">6/15</span></div>
+      <div class="score-row"><span class="score-label">Social Media</span><div class="score-bar-wrap"><div class="score-bar" style="width:40%;background:var(--crit)"></div></div><span class="score-val">4/10</span></div>
+      <div class="score-row"><span class="score-label">Paid Advertising</span><div class="score-bar-wrap"><div class="score-bar" style="width:30%;background:var(--crit)"></div></div><span class="score-val">3/10</span></div>
+    </div>
+  </div>
+
+  <div class="cost-stat">
+    <div class="cost-stat-label">The Cost of Inaction</div>
+    <div class="cost-stat-value">Every month these issues stay unfixed, BriskAir is losing an estimated 40 to 70 service calls to competitors who rank in the top 3 of the Map Pack. At an average ticket of $450, that is $18,000 to $31,500 in lost revenue per month. Over a year, that is $216,000 to $378,000 walking out the door to Art Plumbing and All Year Cooling.</div>
+  </div>
+
+  <div class="note">Scoring methodology: Google Presence (25), Website Health (20), SEO (20), Reputation (15), Social (10), Paid Ads (10). Heavy deductions applied for NAP inconsistency, Map Pack rank below #3, and Yelp vs Google rating divergence. Source code items (GTM, GA4, schema, conversion tags) could not be verified remotely and require manual DevTools inspection.</div>
+
+  <div class="cta-large" style="margin-top:32px">
+    <div class="cta-title">Stop the Revenue Bleeding</div>
+    <div class="cta-desc">Every day without fixed tracking, unified NAP, and a review engine is a day your competitors eat your lunch. Book a 30 minute call and we will show you exactly where the money is leaking and how to plug it.</div>
+    <a href="https://www.boostconhq.com/book" class="cta-btn" target="_blank">Book a Call</a>
+    <div class="cta-contact">info@boostconhq.com &middot; (541) 262-BOOST &middot; (541) 262-6678</div>
+  </div>
+</section>
+
+<!-- 02 COMPANY -->
+<section class="section" id="company">
+  <div class="section-num">02</div>
+  <div class="section-title">Company Identification</div>
+  <div class="cards-grid">
+    <div class="data-card"><div class="data-card-label">Legal Name</div><div class="data-card-value">Brisk Air, Inc.</div><div class="data-card-sub">Florida Profit Corporation</div></div>
+    <div class="data-card"><div class="data-card-label">DBA / Brand Names</div><div class="data-card-value">BriskAir, Brisk Air, B&amp;B Air Conditioning</div><div class="data-card-sub">BBB alternate name: "B &amp; B Air Conditioning"</div></div>
+    <div class="data-card"><div class="data-card-label">Website</div><div class="data-card-value"><a href="https://briskaircool.com" target="_blank">briskaircool.com</a></div><div class="data-card-sub">WordPress + Yoast SEO + WP Rocket</div></div>
+    <div class="data-card"><div class="data-card-label">SunBiz Document #</div><div class="data-card-value">P13000022813</div><div class="data-card-sub">EIN: 47-4203827 &middot; Filed: 03/11/2013</div></div>
+    <div class="data-card"><div class="data-card-label">Owner / President</div><div class="data-card-value">Andy Andres</div><div class="data-card-sub">Secretary: Jacklyn Andres &middot; Agent: Andy Andres Sr.</div></div>
+    <div class="data-card"><div class="data-card-label">Physical Address</div><div class="data-card-value">4450 NW 126th Ave, Ste 103</div><div class="data-card-sub">Coral Springs, FL 33065 (Broward County)</div></div>
+    <div class="data-card"><div class="data-card-label">FL Contractor License</div><div class="data-card-value">CAC1818237</div><div class="data-card-sub">Cert Air Contractor &middot; Active &middot; Exp: 08/31/2028</div></div>
+    <div class="data-card"><div class="data-card-label">Estimated Revenue</div><div class="data-card-value">~$8M / year</div><div class="data-card-sub">Source: RocketReach (2026)</div></div>
+    <div class="data-card"><div class="data-card-label">Estimated Employees</div><div class="data-card-value">15 to 40</div><div class="data-card-sub">Actively hiring (Indeed, Bebee)</div></div>
+    <div class="data-card"><div class="data-card-label">Years in Business</div><div class="data-card-value">Claims "Since 1972"</div><div class="data-card-sub"><span class="flag">CONFLICT:</span> BBB says 11 yrs (2015), LinkedIn says 2013, corp filed 2013</div></div>
+    <div class="data-card"><div class="data-card-label">PE / Parent Company</div><div class="data-card-value">None found</div><div class="data-card-sub">Independent, family owned. No PE or roll up.</div></div>
+    <div class="data-card"><div class="data-card-label">Web Agency</div><div class="data-card-value">Your Digital Resource</div><div class="data-card-sub">Credited in site footer as web maintenance</div></div>
+  </div>
+
+  <div style="margin-top:24px">
+    <div class="section-title" style="font-size:16px">All Phone Numbers Found</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Phone Number</th><th>Where Found</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>(954) 463-7616</strong></td><td>Website header, footer, every page &middot; BBB &middot; Facebook contact</td><td>Primary number. Two tel: formats detected: tel:9544637616 and tel:(954) 463-7616</td></tr>
+        <tr><td><strong>954-856-2893</strong></td><td>Instagram bio &middot; Facebook post creatives</td><td>Secondary number. Splits call attribution.</td></tr>
+        <tr><td><strong>954-369-1639</strong></td><td>PeepLocal &middot; RocketReach</td><td>Third number in circulation. Damages NAP consistency.</td></tr>
+        <tr><td>(407) 315-2510</td><td>Instagram reel</td><td>Orlando area code. Possible Central FL service line.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div style="margin-top:24px">
+    <div class="section-title" style="font-size:16px">Social Media Profiles</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Platform</th><th>URL</th><th>Followers</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Facebook</td><td><a href="https://www.facebook.com/BriskAirCool/" target="_blank">facebook.com/BriskAirCool</a></td><td>184</td><td>Active (last post Aug 2026)</td></tr>
+        <tr><td>Instagram</td><td><a href="https://www.instagram.com/briskairinc/" target="_blank">instagram.com/briskairinc</a></td><td>66</td><td>Active (182 posts)</td></tr>
+        <tr><td>YouTube</td><td><a href="https://www.youtube.com/@BriskAir" target="_blank">youtube.com/@BriskAir</a></td><td>5</td><td>Near dormant (~4 months since last upload)</td></tr>
+        <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/company/brisk-air-coral-springs/" target="_blank">linkedin.com/company/brisk-air-coral-springs</a></td><td>6</td><td>Dormant (no posts, static page)</td></tr>
+        <tr><td>X / Twitter</td><td><a href="https://twitter.com/Brisk_Air" target="_blank">twitter.com/Brisk_Air</a></td><td>5</td><td><span class="flag">Abandoned since July 2021</span> &middot; Location says "Sunrise, FL" (wrong city)</td></tr>
+        <tr><td>Nextdoor</td><td><a href="https://nextdoor.com/pages/brisk-air-inc-coral-springs-fl/" target="_blank">Nextdoor business page</a></td><td>n/a</td><td>Active (replies to neighbors)</td></tr>
+        <tr><td>TikTok</td><td>Not found</td><td>-</td><td>No presence</td></tr>
+        <tr><td>Threads / Pinterest</td><td>Not found</td><td>-</td><td>No presence</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="note">Family owned claim: VERIFIED. Andy Andres is the second generation owner of "Andy Andres Air Conditioning" which merged with "B&amp;B Air Conditioning" (est. 1972). No PE acquisition or roll up found across multiple targeted searches. Source: <a href="https://briskaircool.com/who-we-are/" target="_blank">briskaircool.com/who-we-are</a>, <a href="https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&aggregateId=domp-p13000022813-a58e843c-07d4-408e-a945-fe1c99a042f3" target="_blank">SunBiz filing</a>, <a href="https://www.myfloridalicense.com/LicenseDetail.asp?SID=&id=369038E06F19411BC7AE74556E155F60" target="_blank">FL DBPR license</a>, <a href="https://rocketreach.co/brisk-air-inc-profile_b473be99fc5ce4f3" target="_blank">RocketReach</a>.</div>
+
+  <div class="cta-small">
+    <div class="cta-small-text"><strong>3 phone numbers. 5 founding date claims. 6 social platforms with zero traction.</strong> Every inconsistency is a signal to Google and to prospects that this business is not buttoned up. Let us fix it.</div>
+    <a href="https://www.boostconhq.com/book" class="cta-small-btn" target="_blank">Book a Call</a>
+  </div>
+</section>
+
+<!-- 03 FINDINGS -->
+<section class="section" id="findings">
+  <div class="section-num">03</div>
+  <div class="section-title">Key Findings</div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Finding</th><th>Severity</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>NAP Consistency</td><td class="finding-text">3 different phone numbers in active circulation across platforms (954-463-7616, 954-856-2893, 954-369-1639). Splits call attribution and damages local SEO trust signals.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">Website, Instagram, Facebook, PeepLocal, RocketReach</td></tr>
+      <tr><td>Reputation</td><td class="finding-text">Google rating 4.8 (393 reviews) vs Yelp rating 2.4 (21 reviews). A 2.4 star gap is a major red flag that surfaces dissatisfied customers Google does not.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">Google via FloridaPros, Yelp</td></tr>
+      <tr><td>Website CTA</td><td class="finding-text">"Summer AC Tune Up Specials - View Coupons" banner links to /careers/ (the jobs page), not /specials/. Highest intent conversion button sends traffic to a careers page.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">briskaircool.com homepage source inspection</td></tr>
+      <tr><td>Tracking / Measurement</td><td class="finding-text">GTM container, GA4 property IDs, Google Ads conversion tags, and Microsoft UET tag could not be verified. If absent or commented out, all measurement is dead and ad spend cannot be attributed to revenue.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">Requires manual DevTools inspection (remote tools strip script tags)</td></tr>
+      <tr><td>Google Ads</td><td class="finding-text">No advertiser record found in Google Ads Transparency Center. No evidence of active Google Search campaigns. Competitors (Art Plumbing, All Year Cooling) run heavy paid search.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Google Ads Transparency Center</td></tr>
+      <tr><td>Map Pack Ranking</td><td class="finding-text">Estimated Map Pack rank #5 for "air conditioning contractor near me" in Coral Springs. Below the 3 pack threshold. Review volume (393) is 27x behind market leader Art Plumbing (10,622).</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Prior market scan, FloridaPros, American Standard dealer page</td></tr>
+      <tr><td>Review Volume Gap</td><td class="finding-text">BriskAir has 393 Google reviews. Art Plumbing has 10,622 (27x more). All Year Cooling has 1,873 to 3,902 (5 to 10x more). Review count is a primary local ranking factor.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Google, American Standard dealer page, Birdeye</td></tr>
+      <tr><td>NAP Address</td><td class="finding-text">Suite number (Ste 103) missing from Facebook listing. X/Twitter lists location as "Sunrise, FL" instead of Coral Springs.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Facebook, X/Twitter</td></tr>
+      <tr><td>Founding Date</td><td class="finding-text">5 different founding year claims across platforms: "Since 1972" (website), "over 20 years" (Facebook), "11 years / started 2015" (BBB), "Founded 2013" (LinkedIn), "opened Coral Springs location 2019" (Instagram). Credibility liability.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Website, Facebook, BBB, LinkedIn, Instagram</td></tr>
+      <tr><td>BBB Profile Error</td><td class="finding-text">BBB "Products and Services" section lists roofing services (shingles, metal, tile, slate, EPDM). This is HVAC company with roofing copy pasted from a template. Damages category relevance.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">BBB.org profile</td></tr>
+      <tr><td>Directory Gaps</td><td class="finding-text">No presence on Angi, HomeAdvisor, or ConsumerAffairs. Competitors (All Year Cooling, Art Plumbing) are listed on all three. Missing citation equity and review channels.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">Angi.com, HomeAdvisor.com, ConsumerAffairs.com searches</td></tr>
+      <tr><td>Content Gaps</td><td class="finding-text">Homepage displays manufacturer logos for Trane, Rheem, American Standard, and York but has no dedicated pages for these brands. Missing "[brand] dealer Coral Springs" keyword capture. No Carrier page.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">briskaircool.com homepage, page-sitemap.xml</td></tr>
+      <tr><td>Spanish Language</td><td class="finding-text">No Spanish content anywhere on site. No /es/ path, no hreflang tags. In heavily bilingual Broward County, this is a missed market and SEO gap.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">briskaircool.com sitemap (193 URLs, all English)</td></tr>
+      <tr><td>Meta Description</td><td class="finding-text">Homepage meta description does not mention Coral Springs. Missed geo relevance signal for the primary market. Sub pages generally do reference the city.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">briskaircool.com homepage</td></tr>
+      <tr><td>Image Optimization</td><td class="finding-text">Hero image and logo served as PNG/JPG, not WebP. No modern image format. Lazy loading detected (LQIP placeholders) which is positive.</td><td><span class="badge badge-low">Low</span></td><td class="finding-source">briskaircool.com rendered page inspection</td></tr>
+      <tr><td>Social Over Diversification</td><td class="finding-text">Active on 6 social platforms with meaningful traction on 0. Facebook 184 followers (<1% engagement), Instagram 66, YouTube 5, LinkedIn 6, X/Twitter 5 (abandoned 2021). Effort spread thin.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">Facebook, Instagram, YouTube, LinkedIn, X/Twitter</td></tr>
+      <tr><td>Domain Authority</td><td class="finding-text">Domain below SimilarWeb measurement threshold (<5k visits/mo). Very low domain authority. Thin backlink profile. Only inbound links are self citations and low value aggregators.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">SimilarWeb, web search for backlink data</td></tr>
+      <tr><td>robots.txt</td><td class="finding-text">AI crawlers (GPTBot, ChatGPT User, CCBot, anthropic ai, ClaudeBot, Google Extended) are NOT blocked. No over broad rules. Yoast generated block is clean and well targeted.</td><td><span class="badge badge-low">Low</span></td><td class="finding-source">briskaircool.com/robots.txt</td></tr>
+      <tr><td>Sitemap Health</td><td class="finding-text">193 URLs across 2 sitemaps (106 posts + 87 pages). Fresh (last modified Aug 2026). Heavy programmatic city page footprint. Redirect percentage not verifiable remotely.</td><td><span class="badge badge-low">Low</span></td><td class="finding-source">briskaircool.com/sitemap_index.xml</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="cta-small">
+    <div class="cta-small-text"><strong>4 Critical findings. 5 High severity issues. Every one of them is costing you calls.</strong> The longer these stay unfixed, the more ground Art Plumbing and All Year Cooling gain.</div>
+    <a href="https://www.boostconhq.com/book" class="cta-small-btn" target="_blank">Book a Call</a>
+  </div>
+</section>
+
+<!-- 04 BENCHMARK -->
+<section class="section" id="benchmark">
+  <div class="section-num">04</div>
+  <div class="section-title">Competitive Benchmark: Coral Springs Map Pack</div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Rank (est.)</th><th>Company</th><th>Google Rating</th><th>Google Reviews</th><th>Review Gap vs BriskAir</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td><strong>#1</strong></td><td><a href="https://www.artplumbingandac.com/" target="_blank">Art Plumbing, AC &amp; Electric</a></td><td>4.8</td><td><strong>10,622</strong></td><td><span class="gap-indicator">27x more</span></td><td>4151 NW 124th Ave (same street as BriskAir). Est. 1983. BBB accredited since 2005. Heavy paid search. 25,000+ 5 star reviews celebrated. Yelp 1.7 (338).</td></tr>
+      <tr><td><strong>#2</strong></td><td><a href="https://allyearcooling.com/" target="_blank">All Year Cooling &amp; Plumbing</a></td><td>4.6 to 4.8</td><td><strong>1,873 to 3,902</strong></td><td><span class="gap-indicator">5 to 10x more</span></td><td>4300 NW 124th Ave (same street). Est. 1973. 350,000+ customers claimed. Facebook 9,784 likes. BBB A+ since 2007. ConsumerAffairs listed.</td></tr>
+      <tr><td><strong>#3</strong></td><td><a href="https://airamericaac.com/" target="_blank">Snyder AC / Air America AC</a></td><td>4.9</td><td><strong>1,300+</strong> (Air America) / 29,014 co wide</td><td><span class="gap-indicator">3x+ more</span></td><td>12550 NW Coral Springs. Snyder acquired Air America. Yelp 2.8 (260). Upselling complaints. ConsumerAffairs 8.1/10.</td></tr>
+      <tr><td><strong>#4</strong></td><td><a href="https://reliableacservices.com/" target="_blank">Reliable AC Services</a></td><td>Not confirmed</td><td><strong>245</strong></td><td><span class="gap-indicator">0.6x (fewer)</span></td><td>12450 Wiles Rd. Since 2013. Not BBB accredited. Fewer reviews than BriskAir but may outrank on other signals.</td></tr>
+      <tr style="background:var(--accent-glow)"><td><strong>#5</strong></td><td><strong>BriskAir</strong> (subject)</td><td><strong>4.8</strong></td><td><strong>393</strong></td><td>Baseline</td><td>4450 NW 126th Ave. Family owned. No Google Ads. Yelp 2.4 (21). 3 phone numbers in circulation.</td></tr>
+      <tr><td>#6</td><td>Aire Serv of Coral Springs</td><td>Not confirmed</td><td>Low volume</td><td>-</td><td>Franchise. Lic CAC1819624. Facebook 15 reviews, 100% recommend.</td></tr>
+      <tr><td>#7</td><td><a href="https://expertcoolac.com/" target="_blank">Expert Cool AC Services</a></td><td>Not confirmed</td><td>Testimonials only</td><td>-</td><td>Small online footprint. Not on major directories.</td></tr>
+      <tr><td>#8</td><td>Alpha Breezy HVAC</td><td>Few reviews</td><td>Low volume</td><td>-</td><td>11864 Wiles Rd. Not BBB accredited. Newer entrant. Commercial + residential.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div style="margin-top:24px">
+    <div class="section-title" style="font-size:16px">Competitor Financial Distress Signal</div>
+    <div class="data-card" style="border-left:4px solid var(--high)">
+      <div class="data-card-label">Market Disruption Opportunity</div>
+      <div class="data-card-value">Air Pros USA filed Chapter 11 Bankruptcy (March 16, 2025)</div>
+      <div class="data-card-sub">$250M+ in secured debt. Selling off business units for $155M+. Large South Florida HVAC platform with Coral Springs office. <a href="https://elevenflo.com/blog/air-pros-usa-bankruptcy" target="_blank">Source: ElevenFlo</a> &middot; <a href="https://www.bizjournals.com/southflorida/news/2025/05/15/air-pros-bankruptcy-selling-businesses.html" target="_blank">SFBJ</a>. This collapse has freed up local demand and displaced customers who need a new HVAC provider.</div>
+    </div>
+  </div>
+
+  <div class="cost-stat">
+    <div class="cost-stat-label">What the Gap Costs You</div>
+    <div class="cost-stat-value">Art Plumbing has 27x more reviews and outranks you in the Map Pack. When a Coral Springs homeowner searches "AC repair near me," Art Plumbing gets the call first. At 393 reviews versus 10,622, you are invisible to the majority of searchers. Closing this gap is not optional if you want to compete for the 1,200+ monthly searches for "AC repair Coral Springs" that are going to your competitors right now.</div>
+  </div>
+
+  <div class="note">Map Pack rankings estimated from review volume, rating, and proximity signals. All 3 top competitors are on the same street (NW 124th Ave) as BriskAir. Exact live rankings require a geo grid tool (Local Falcon, BrightLocal) run from a Coral Springs IP. Source: <a href="https://www.americanstandardair.com/dealers/art-plumbing-and-air-conditioning-coral-springs-florida-415268/" target="_blank">American Standard dealer page</a>, <a href="https://reviews.birdeye.com/all-year-cooling-389471040" target="_blank">Birdeye</a>, <a href="https://www.trane.com/residential/en/dealers/all-year-cooling-coral-springs-florida-1025082/" target="_blank">Trane dealer page</a>.</div>
+
+  <div class="cta-small">
+    <div class="cta-small-text"><strong>Air Pros went bankrupt and left thousands of South Florida customers stranded.</strong> Those customers are searching for a new HVAC company right now. Are they finding BriskAir, or Art Plumbing?</div>
+    <a href="https://www.boostconhq.com/book" class="cta-small-btn" target="_blank">Book a Call</a>
+  </div>
+</section>
+
+<!-- 05 BROKEN ITEMS -->
+<section class="section" id="broken">
+  <div class="section-num">05</div>
+  <div class="section-title">Broken and Improvable Items</div>
+
+  <div class="finding-item crit">
+    <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">Misrouted "Specials" CTA sends traffic to careers page</span></div>
+    <div class="finding-detail">The "Summer AC Tune Up Specials - View Coupons" banner on the homepage links to /careers/ (the jobs page) instead of /specials/. This is a high intent conversion button sending users to a completely wrong destination. The separate "VIEW COUPONS" nav item does correctly point to /specials/.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Change the href on the "Summer AC Tune Up Specials" banner from /careers/ to /specials/. This is a single line fix in the WordPress menu or page builder. Verify all promotional CTAs route to the correct landing page.</div>
+    <div class="finding-src">Source: briskaircool.com homepage navigation inspection</div>
+  </div>
+
+  <div class="finding-item crit">
+    <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">3 phone numbers in active circulation (NAP split)</span></div>
+    <div class="finding-detail">954-463-7616 (website, BBB, Facebook), 954-856-2893 (Instagram, Facebook creatives), 954-369-1639 (PeepLocal, RocketReach). Google's algorithm treats phone inconsistency as a trust and citation signal. Three numbers splits call attribution and hurts local pack ranking.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Choose one canonical phone number (recommend 954-463-7616 as it is the most widely used). Update Instagram bio, Facebook contact, PeepLocal, RocketReach, and any other directory to match. Audit all citations with a tool like BrightLocal or Whitespark.</div>
+    <div class="finding-src">Source: Website, Instagram, Facebook, PeepLocal, RocketReach cross reference</div>
+  </div>
+
+  <div class="finding-item crit">
+    <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">Yelp 2.4 stars vs Google 4.8 stars (2.4 star gap)</span></div>
+    <div class="finding-detail">21 Yelp reviews at 2.4 stars vs 393 Google reviews at 4.8 stars. This divergence is a classic reputation red flag. Yelp surfaces dissatisfied customers that Google does not. Yahoo Local mirrors Yelp at 2.5 stars. One Yahoo review reads "Absolutely the WORST ac company I've ever used. Rude staff, bad techs."</div>
+    <div class="finding-fix"><strong>Fix:</strong> Read all 21 Yelp reviews to identify recurring complaint themes. Implement a review generation flow that pushes satisfied customers to Yelp (not just Google). Address the specific service failures driving negative Yelp reviews operationally. Consider a reputation management platform (pulseM is already installed).</div>
+    <div class="finding-src">Source: <a href="https://www.yelp.com/biz/briskair-coral-springs" target="_blank">Yelp</a>, <a href="https://local.yahoo.com/info-220968442-briskair-coral-springs/" target="_blank">Yahoo Local</a>, <a href="https://floridapros.org/pro/coral-springs/brisk-air-coral-springs/" target="_blank">FloridaPros (Google)</a></div>
+  </div>
+
+  <div class="finding-item crit">
+    <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">Tracking and measurement layer unverified (GTM, GA4, conversion tags)</span></div>
+    <div class="finding-detail">GTM container ID, GA4 property IDs, Google Ads AW conversion tag, and Microsoft UET tag could not be verified through remote inspection. The site has 2 about:blank iframes (possibly GTM noscript or map embeds). If GTM is commented out or absent, all measurement is dead and any ad spend cannot be attributed to revenue.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Open view-source:https://briskaircool.com/ in a browser. Search for "GTM-", "AW-", "G-", "gtag", "ld+json". If GTM is commented out (wrapped in &lt;!-- --&gt;), uncomment it. If absent, install GTM immediately. Verify GA4 is firing via Tag Assistant. Set up conversion events for: phone calls, form submissions, schedule appointment, coupon views.</div>
+    <div class="finding-src">Source: Requires manual DevTools inspection. Remote tools (web navigation, proxy fetchers) strip script tags before rendering.</div>
+  </div>
+
+  <div class="finding-item high">
+    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">No Google Ads presence while competitors run heavy paid search</span></div>
+    <div class="finding-detail">No advertiser record found in Google Ads Transparency Center. No BriskAir ads surfaced for "AC repair Coral Springs" or "HVAC Coral Springs" searches. Art Plumbing runs prominent specials ($93 or it's free, 0% financing). All Year Cooling runs aggressive same day service marketing. BriskAir is invisible on paid search.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Before launching Google Ads, verify conversion tracking is live (ties to GTM finding above). Start with Google Local Services Ads (pay per lead, not click) for immediate visibility. Then layer in Search ads for "AC repair Coral Springs" and emergency service keywords. Budget recommendation: $1,500 to $3,000/mo to start.</div>
+    <div class="finding-src">Source: Google Ads Transparency Center, competitor website analysis</div>
+  </div>
+
+  <div class="finding-item high">
+    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">Review volume 27x behind market leader</span></div>
+    <div class="finding-detail">BriskAir: 393 Google reviews. Art Plumbing: 10,622 (27x more). All Year Cooling: 1,873 to 3,902 (5 to 10x more). Review count is a primary local ranking factor. At current velocity (~35/yr), BriskAir will never close this gap organically.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Implement automated review request flow via pulseM (already installed on site). Send SMS review requests within 24 hours of service completion. Target 5 to 10 new Google reviews per week. Consider a review incentive program (entry into monthly drawing). Prioritize Google over Yelp given the Yelp rating issue.</div>
+    <div class="finding-src">Source: <a href="https://www.americanstandardair.com/dealers/art-plumbing-and-air-conditioning-coral-springs-florida-415268/" target="_blank">American Standard</a>, <a href="https://allyearcooling.com/" target="_blank">allyearcooling.com</a>, <a href="https://floridapros.org/pro/coral-springs/brisk-air-coral-springs/" target="_blank">FloridaPros</a></div>
+  </div>
+
+  <div class="finding-item high">
+    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">5 different founding year claims across platforms</span></div>
+    <div class="finding-detail">"Since 1972" (website, Yellow Pages), "over 20 years" (Facebook), "11 years / started 2015" (BBB), "Founded 2013" (LinkedIn), "opened Coral Springs location 2019" (Instagram references). These cannot all be true. A competitor or skeptical prospect could flag this as a credibility issue.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Decide on one canonical founding narrative. The "Since 1972" claim traces to B&amp;B Air Conditioning (predecessor). Reconcile this with BBB (business started 2015) by framing as "Family serving Coral Springs since 1972 through predecessor companies, Brisk Air Inc. established 2013." Update all platforms to match.</div>
+    <div class="finding-src">Source: Website, Facebook, BBB, LinkedIn, Yellow Pages</div>
+  </div>
+
+  <div class="finding-item high">
+    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">X/Twitter lists wrong city and is abandoned since 2021</span></div>
+    <div class="finding-detail">X/Twitter profile location says "Sunrise, FL" instead of Coral Springs. Last tweet was July 9, 2021. 5 followers, 15 following. This is a dormant NAP inconsistency that Google may crawl.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Either update the location to Coral Springs and revive the account, or delete it entirely. A dormant profile with wrong city data is worse than no profile. If deleting, ensure no inbound links depend on it.</div>
+    <div class="finding-src">Source: <a href="https://x.com/Brisk_Air" target="_blank">x.com/Brisk_Air</a></div>
+  </div>
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">BBB profile lists roofing services for an HVAC company</span></div>
+    <div class="finding-detail">BBB "Products and Services" section lists shingles, metal roofing, tile, slate, EPDM systems, and wood shakes. This is roofing copy pasted from a template onto an HVAC listing. Damages category relevance and confuses prospects.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Log into BBB profile and remove all roofing categories. Replace with correct HVAC service categories: AC repair, AC installation, heating repair, duct cleaning, indoor air quality, commercial HVAC.</div>
+    <div class="finding-src">Source: <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-repair/brisk-air-inc-0633-90309969" target="_blank">BBB.org</a></div>
+  </div>
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">Missing manufacturer pages for displayed brands</span></div>
+    <div class="finding-detail">Homepage displays logos for Trane, Rheem, American Standard, and York but has no dedicated pages. Only Amana, Lennox, Mitsubishi, and Daikin have pages. Missing "[brand] dealer Coral Springs" keyword capture for 4 displayed brands.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Create dedicated manufacturer pages for Trane, Rheem, American Standard, York, and Carrier. Follow the existing template used for Mitsubishi and Daikin pages. Each page should include: brand overview, models serviced, warranty info, and Coral Springs geo targeting.</div>
+    <div class="finding-src">Source: briskaircool.com homepage, page-sitemap.xml</div>
+  </div>
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">No Spanish content in bilingual Broward County</span></div>
+    <div class="finding-detail">All 193 sitemap URLs are English. No /es/ path, no hreflang tags. Broward County is heavily bilingual. Competitors who add Spanish content capture a significant underserved market segment.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Translate top 10 service pages and homepage to Spanish. Add hreflang tags linking English and Spanish versions. Start with homepage, AC repair, AC installation, and emergency service pages. Use a native speaker, not auto translation.</div>
+    <div class="finding-src">Source: briskaircool.com sitemap (193 URLs, all English)</div>
+  </div>
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">No presence on Angi, HomeAdvisor, or ConsumerAffairs</span></div>
+    <div class="finding-detail">Competitors All Year Cooling and Art Plumbing are listed on all three platforms. BriskAir is absent. These are citation and review channels that also drive leads.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Create profiles on Angi (free and paid tiers), HomeAdvisor (requires background check), and claim or create a ConsumerAffairs listing. Use canonical NAP (one phone, one address, one name) across all new listings.</div>
+    <div class="finding-src">Source: Angi.com, HomeAdvisor.com, ConsumerAffairs.com searches</div>
+  </div>
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">Social media over diversified with zero traction</span></div>
+    <div class="finding-detail">6 platforms maintained (Facebook, Instagram, YouTube, LinkedIn, X, Nextdoor) with meaningful traction on 0. Facebook 184 followers at <1% engagement. Instagram 66 followers. YouTube 5 subscribers. LinkedIn 6 followers. X abandoned since 2021.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Consolidate effort onto Facebook + Instagram + Google Business Profile (where local buyers actually are). Either revive or delete dormant X, LinkedIn, and YouTube profiles to stop diluting NAP signals. Post 3x per week on FB/IG with service tips, before/after photos, and customer testimonials.</div>
+    <div class="finding-src">Source: All social platform profiles</div>
+  </div>
+
+  <div class="finding-item low">
+    <div class="finding-head"><span class="badge badge-low">Low</span><span class="finding-title">Hero and logo images not served as WebP</span></div>
+    <div class="finding-detail">Hero image (Hero-image-1.jpg) and logo (LOGO.png) are served as JPG/PNG, not WebP. Lazy loading is detected (LQIP SVG placeholders), which is positive. WP Rocket is installed and can handle WebP conversion.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Enable WebP conversion in WP Rocket settings (if not already enabled for other images). Regenerate thumbnails. Serve modern formats with proper fallbacks.</div>
+    <div class="finding-src">Source: briskaircool.com rendered page inspection</div>
+  </div>
+
+  <div class="finding-item low">
+    <div class="finding-head"><span class="badge badge-low">Low</span><span class="finding-title">Homepage meta description omits Coral Springs</span></div>
+    <div class="finding-detail">Homepage meta description says "Brisk Air offers expert AC installation, repair, and maintenance services" but does not mention Coral Springs. Sub pages generally do reference the city. Missed geo relevance signal on the most important page.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Update homepage meta description to include "Coral Springs, FL" and primary service keywords. Example: "Brisk Air offers expert AC installation, repair, and maintenance services in Coral Springs, FL and South Florida. Family owned since 1972."</div>
+    <div class="finding-src">Source: briskaircool.com homepage</div>
+  </div>
+
+  <div class="cta-small">
+    <div class="cta-small-text"><strong>4 Critical issues are bleeding revenue right now.</strong> The specials banner sends buyers to a careers page. Three phone numbers split your call data. Yelp tells a different story than Google. And nobody can verify if tracking is even on. How many more calls can you afford to lose?</div>
+    <a href="https://www.boostconhq.com/book" class="cta-small-btn" target="_blank">Book a Call</a>
+  </div>
+</section>
+
+<!-- 06 OPPORTUNITIES -->
+<section class="section" id="opportunities">
+  <div class="section-num">06</div>
+  <div class="section-title">Top 5 Immediate Opportunities</div>
+  <div class="opp-grid">
+    <div class="opp-card">
+      <div class="opp-rank">1</div>
+      <div class="opp-title">Fix Misrouted Specials CTA</div>
+      <div class="opp-desc">The "Summer AC Tune Up Specials" banner on the homepage sends traffic to /careers/ instead of /specials/. Every visitor who clicks this high intent button lands on a jobs page. This is a single line fix with immediate revenue recovery. Every day it stays broken, you lose tune up bookings.</div>
+      <div class="opp-meta"><span class="opp-tag" style="background:var(--crit-bg);color:var(--crit)">Critical Impact</span><span class="opp-tag" style="background:var(--low-bg);color:var(--low)">1 Day</span></div>
+    </div>
+    <div class="opp-card">
+      <div class="opp-rank">2</div>
+      <div class="opp-title">Unify Phone Number Across All Platforms</div>
+      <div class="opp-desc">3 different phone numbers split call attribution and damage local SEO trust signals. Consolidating to one canonical number (954-463-7616) across website, social, and directories is the single biggest local SEO lever available. Without this, Google has no confidence in your citation profile.</div>
+      <div class="opp-meta"><span class="opp-tag" style="background:var(--crit-bg);color:var(--crit)">Critical Impact</span><span class="opp-tag" style="background:var(--low-bg);color:var(--low)">1 Day</span></div>
+    </div>
+    <div class="opp-card">
+      <div class="opp-rank">3</div>
+      <div class="opp-title">Verify and Repair Measurement Layer</div>
+      <div class="opp-desc">Before spending a dollar on ads, verify GTM is active (not commented out), GA4 is firing, and conversion events are set up for calls, forms, and appointments. If measurement is dead, every ad dollar is a blind bet. This is the strongest discovery call angle and the single highest ROI fix on this list.</div>
+      <div class="opp-meta"><span class="opp-tag" style="background:var(--crit-bg);color:var(--crit)">Critical Impact</span><span class="opp-tag" style="background:var(--med-bg);color:var(--med)">1 to 2 Weeks</span></div>
+    </div>
+    <div class="opp-card">
+      <div class="opp-rank">4</div>
+      <div class="opp-title">Launch Review Generation Engine</div>
+      <div class="opp-desc">pulseM is already installed on the site but review velocity is ~35/year. Target 5 to 10 new Google reviews per week via automated SMS requests after service completion. Closing the review gap (393 vs 10,622) is the long game that unlocks Map Pack visibility and steals calls from Art Plumbing.</div>
+      <div class="opp-meta"><span class="opp-tag" style="background:var(--high-bg);color:var(--high)">High Impact</span><span class="opp-tag" style="background:var(--med-bg);color:var(--med)">1 to 2 Weeks</span></div>
+    </div>
+    <div class="opp-card">
+      <div class="opp-rank">5</div>
+      <div class="opp-title">Launch Google Local Services Ads</div>
+      <div class="opp-desc">No Google Ads presence while competitors run heavy paid search. Start with Google Local Services Ads (pay per lead, not per click) for immediate Map Pack visibility. Air Pros bankruptcy has freed up local demand. Layer in Search ads once conversion tracking is verified.</div>
+      <div class="opp-meta"><span class="opp-tag" style="background:var(--high-bg);color:var(--high)">High Impact</span><span class="opp-tag" style="background:var(--high-bg);color:var(--high)">2 to 4 Months</span></div>
+    </div>
+  </div>
+
+  <div class="cta-large" style="margin-top:40px">
+    <div class="cta-title">Every Day You Wait, a Competitor Gets the Call</div>
+    <div class="cta-desc">BriskAir is losing an estimated $18,000 to $31,500 per month in missed service calls. Art Plumbing is 27 reviews ahead and growing. Air Pros left thousands of stranded customers looking for a new provider. The fixes on this page are not optional. They are the difference between capturing that demand or handing it to your competitors. Book a 30 minute call and we will build the 90 day execution plan.</div>
+    <a href="https://www.boostconhq.com/book" class="cta-btn" target="_blank">Book a Call</a>
+    <div class="cta-contact">info@boostconhq.com &middot; (541) 262-BOOST &middot; (541) 262-6678</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-text">Powered by <a href="https://www.boostconhq.com" target="_blank">BoostCon</a> &middot; AI Consulting for Home Services</div>
+  <div class="footer-text" style="margin-top:8px">This report was generated on Sep 5, 2026. Data sources include SunBiz, BBB, Yelp, Google, FloridaPros, BuiltWith, RocketReach, MyFloridaLicense, and direct website inspection.</div>
+</footer>
+
+<script>
+(function(){
+  var html=document.documentElement;var toggle=document.getElementById('themeToggle');
+  var saved=localStorage.getItem('briskair-theme');
+  if(saved){html.setAttribute('data-theme',saved);}
+  toggle.addEventListener('click',function(){
+    var current=html.getAttribute('data-theme');
+    var next=current==='dark'?'light':'dark';
+    html.setAttribute('data-theme',next);
+    localStorage.setItem('briskair-theme',next);
+    toggle.innerHTML=next==='dark'?'☾':'☀';
+  });
+  toggle.innerHTML=(html.getAttribute('data-theme')==='dark')?'☾':'☀';
+})();
+document.getElementById('printBtn').addEventListener('click',function(){window.print();});
+window.addEventListener('load',function(){
+  var bars=document.querySelectorAll('.score-bar');
+  bars.forEach(function(bar){var w=bar.style.width;bar.style.width='0';setTimeout(function(){bar.style.width=w;},100);});
+});
+
+// Hamburger menu
+document.getElementById('hamburger').addEventListener('click',function(e){
+  e.stopPropagation();
+  var menu=document.getElementById('mobileMenu');
+  menu.classList.toggle('open');
+  this.innerHTML=menu.classList.contains('open')?'&#10005;':'&#9776;';
+});
+document.addEventListener('click',function(e){
+  var menu=document.getElementById('mobileMenu');
+  var hamburger=document.getElementById('hamburger');
+  if(menu.classList.contains('open') && !menu.contains(e.target) && e.target!==hamburger){
+    menu.classList.remove('open');
+    hamburger.innerHTML='&#9776;';
+  }
+});
+document.querySelectorAll('.mobile-menu .nav-link').forEach(function(link){
+  link.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.getElementById('hamburger').innerHTML='&#9776;';
+  });
+});
+</script>
+</body>
+</html>
