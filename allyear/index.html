@@ -3,43 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All Year Cooling Digital Marketing Audit | BoostCon</title>
+<title>All Year Cooling Audit Report | Boostcon</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --mono:'SF Mono','Fira Code','Fira Mono','Roboto Mono',ui-monospace,monospace;
-  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
-  --radius:12px;--transition:0.3s cubic-bezier(0.4,0,0.2,1);
-}
-[data-theme="dark"]{
-  --bg:#0a0e17;--bg2:#111827;--bg3:#1a2332;
-  --text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;
-  --accent:#0282f5;--accent2:#05a7fc;--accent-glow:rgba(0,212,255,0.15);
-  --border:#1e293b;--border2:#334155;
-  --card:#0f1623;--card-hover:#162236;
-  --crit:#ff4757;--high:#ff9f43;--med:#ffd93d;--low:#2ed573;
-  --crit-bg:rgba(255,71,87,0.1);--high-bg:rgba(255,159,67,0.1);
-  --med-bg:rgba(255,217,61,0.1);--low-bg:rgba(46,213,115,0.1);
-  --score:#ff9f43;--score-bg:rgba(255,159,67,0.1);
-  --nav-bg:rgba(10,14,23,0.95);--shadow:0 4px 24px rgba(0,0,0,0.4);
-}
-[data-theme="light"]{
-  --bg:#f8fafc;--bg2:#ffffff;--bg3:#f1f5f9;
-  --text:#1e293b;--text2:#64748b;--text3:#94a3b8;
-  --accent:#0284c7;--accent2:#0ea5e9;--accent-glow:rgba(2,132,199,0.1);
-  --border:#e2e8f0;--border2:#cbd5e1;
-  --card:#ffffff;--card-hover:#f8fafc;
-  --crit:#e11d48;--high:#ea580c;--med:#ca8a04;--low:#16a34a;
-  --crit-bg:rgba(225,29,72,0.08);--high-bg:rgba(234,88,12,0.08);
-  --med-bg:rgba(202,138,4,0.08);--low-bg:rgba(22,163,74,0.08);
-  --score:#ea580c;--score-bg:rgba(234,88,12,0.08);
-  --nav-bg:rgba(248,250,252,0.95);--shadow:0 4px 24px rgba(0,0,0,0.08);
-}
+:root{--mono:'SF Mono','Fira Code','Fira Mono','Roboto Mono',ui-monospace,monospace;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;--radius:12px;--transition:0.3s cubic-bezier(0.4,0,0.2,1);}
+[data-theme="dark"]{--bg:#0a0e17;--bg2:#111827;--bg3:#1a2332;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--accent:#0282f5;--accent2:#05a7fc;--accent-glow:rgba(0,212,255,0.15);--border:#1e293b;--border2:#334155;--card:#0f1623;--card-hover:#162236;--crit:#ff4757;--high:#ff9f43;--med:#ffd93d;--low:#2ed573;--crit-bg:rgba(255,71,87,0.1);--high-bg:rgba(255,159,67,0.1);--med-bg:rgba(255,217,61,0.1);--low-bg:rgba(46,213,115,0.1);--score:#ff9f43;--score-bg:rgba(255,159,67,0.1);--nav-bg:rgba(10,14,23,0.95);--shadow:0 4px 24px rgba(0,0,0,0.4);}
+[data-theme="light"]{--bg:#f8fafc;--bg2:#ffffff;--bg3:#f1f5f9;--text:#1e293b;--text2:#64748b;--text3:#94a3b8;--accent:#0284c7;--accent2:#0ea5e9;--accent-glow:rgba(2,132,199,0.1);--border:#e2e8f0;--border2:#cbd5e1;--card:#ffffff;--card-hover:#f8fafc;--crit:#e11d48;--high:#ea580c;--med:#ca8a04;--low:#16a34a;--crit-bg:rgba(225,29,72,0.08);--high-bg:rgba(234,88,12,0.08);--med-bg:rgba(202,138,4,0.08);--low-bg:rgba(22,163,74,0.08);--score:#ea580c;--score-bg:rgba(234,88,12,0.08);--nav-bg:rgba(248,250,252,0.95);--shadow:0 4px 24px rgba(0,0,0,0.08);}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;transition:background var(--transition),color var(--transition)}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+a[target="_blank"]{position:relative}
 
-/* HEADER */
 .header{background:linear-gradient(135deg,var(--bg2),var(--bg));border-bottom:1px solid var(--border);padding:0;position:relative;overflow:hidden}
 .header-inner{max-width:1200px;margin:0 auto;padding:28px 24px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
 .header-left{flex:1;min-width:0}
@@ -51,29 +25,21 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .icon-btn:hover{background:var(--card-hover);color:var(--accent);border-color:var(--accent)}
 .header-meta{max-width:1200px;margin:0 auto;padding:12px 24px 24px;font-family:var(--mono);font-size:11px;color:var(--text3);display:flex;gap:16px;flex-wrap:wrap}
 .header-meta span{display:flex;align-items:center;gap:4px}
-
-/* NAV BAR */
 .nav{position:sticky;top:0;z-index:100;background:var(--nav-bg);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:4px;padding:0 24px;overflow-x:auto;scrollbar-width:none}
 .nav-inner::-webkit-scrollbar{display:none}
 .nav-link{font-family:var(--mono);font-size:12px;color:var(--text2);padding:14px 12px;white-space:nowrap;border-bottom:2px solid transparent;transition:all var(--transition)}
-.nav-link:hover{color:var(--accent);text-decoration:none;border-bottom-color:var(--accent)}
+.nav-link:hover,.nav-link.active{color:var(--accent);text-decoration:none;border-bottom-color:var(--accent)}
 .nav-cta{margin-left:auto;background:var(--accent);color:var(--bg);font-family:var(--mono);font-size:12px;font-weight:700;padding:8px 16px;border-radius:6px;white-space:nowrap;transition:all var(--transition)}
 .nav-cta:hover{opacity:0.85;text-decoration:none;color:var(--bg)}
-
-/* HAMBURGER */
-.hamburger{display:none;background:none;border:none;color:var(--text2);font-size:22px;cursor:pointer;padding:14px 16px}
+.hamburger{display:none;background:none;border:none;color:var(--text2);font-size:22px;cursor:pointer;padding:14px 16px;position:sticky;top:0;z-index:101}
 .mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:var(--shadow);padding:16px 24px;z-index:99}
 .mobile-menu.open{display:flex;flex-direction:column;gap:4px}
-.mobile-menu .nav-link{border-bottom:none;padding:12px 0;font-size:14px}
+.mobile-menu .nav-link{border-bottom:none;padding:12px 0;font-size:14px}.mobile-menu .nav-link.active{color:var(--accent);font-weight:600}
 .mobile-menu .nav-cta{margin-left:0;margin-top:8px;text-align:center}
-
-/* SECTIONS */
 .section{max-width:1200px;margin:0 auto;padding:48px 24px}
 .section-num{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
 .section-title{font-size:22px;font-weight:700;margin-bottom:24px;letter-spacing:-0.3px}
-
-/* SCORE */
 .score-wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
 @media(max-width:768px){.score-wrap{grid-template-columns:1fr}}
 .score-big{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:40px 24px;position:relative;overflow:hidden}
@@ -88,8 +54,6 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .score-bar-wrap{flex:1;height:10px;background:var(--bg3);border-radius:5px;overflow:hidden;position:relative}
 .score-bar{height:100%;border-radius:5px;transition:width 1s cubic-bezier(0.4,0,0.2,1)}
 .score-val{font-family:var(--mono);font-size:13px;font-weight:700;min-width:60px;text-align:right}
-
-/* DATA CARDS */
 .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 .data-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:all var(--transition)}
 .data-card:hover{border-color:var(--border2);background:var(--card-hover)}
@@ -97,23 +61,17 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .data-card-value{font-size:15px;font-weight:600;color:var(--text)}
 .data-card-sub{font-size:12px;color:var(--text2);margin-top:4px}
 .data-card a{font-size:13px;word-break:break-all}
-
-/* TABLES */
 .table-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{background:var(--bg2);font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--text3);text-align:left;padding:12px 16px;border-bottom:1px solid var(--border)}
 td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:top}
 tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
 .finding-text{font-weight:500}.finding-source{font-family:var(--mono);font-size:11px;color:var(--text3)}
-
-/* BADGES */
 .badge{font-family:var(--mono);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:4px;display:inline-block;white-space:nowrap}
 .badge-crit{background:var(--crit-bg);color:var(--crit);border:1px solid var(--crit)}
 .badge-high{background:var(--high-bg);color:var(--high);border:1px solid var(--high)}
 .badge-med{background:var(--med-bg);color:var(--med);border:1px solid var(--med)}
 .badge-low{background:var(--low-bg);color:var(--low);border:1px solid var(--low)}
-
-/* FINDINGS LIST */
 .finding-item{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--border2);border-radius:8px;padding:20px;margin-bottom:12px;transition:all var(--transition)}
 .finding-item.crit{border-left-color:var(--crit)}.finding-item.high{border-left-color:var(--high)}
 .finding-item.med{border-left-color:var(--med)}.finding-item.low{border-left-color:var(--low)}
@@ -124,8 +82,6 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
 .finding-fix{font-size:13px;color:var(--text);background:var(--bg3);border-radius:6px;padding:10px 14px;margin-top:8px}
 .finding-fix strong{color:var(--accent)}
 .finding-src{font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:6px}
-
-/* OPPORTUNITY CARDS */
 .opp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
 .opp-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;position:relative;overflow:hidden;transition:all var(--transition)}
 .opp-card:hover{border-color:var(--accent);box-shadow:0 0 24px var(--accent-glow)}
@@ -135,8 +91,6 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
 .opp-desc{font-size:13px;color:var(--text2);margin-bottom:16px;line-height:1.5}
 .opp-meta{display:flex;gap:8px;flex-wrap:wrap}
 .opp-tag{font-family:var(--mono);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:4px}
-
-/* CTA STYLES */
 .cta-large{background:linear-gradient(135deg,var(--card),var(--bg2));border:1px solid var(--accent);border-radius:var(--radius);padding:32px;margin:0 auto;max-width:600px;text-align:center;position:relative;overflow:hidden}
 .cta-large::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
 .cta-title{font-size:20px;font-weight:700;margin-bottom:8px}
@@ -144,56 +98,30 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
 .cta-btn{display:inline-block;background:var(--accent);color:var(--bg);font-family:var(--mono);font-size:14px;font-weight:700;padding:14px 32px;border-radius:8px;text-decoration:none;transition:all var(--transition)}
 .cta-btn:hover{opacity:0.85;text-decoration:none;color:var(--bg)}
 .cta-contact{font-family:var(--mono);font-size:12px;color:var(--text3);margin-top:16px}
-
 .cta-small{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px 20px;margin-top:32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .cta-small-text{font-size:13px;color:var(--text2);flex:1;min-width:200px}
 .cta-small-text strong{color:var(--text)}
 .cta-small-btn{font-family:var(--mono);font-size:12px;font-weight:700;background:var(--accent);color:var(--bg);padding:10px 20px;border-radius:6px;text-decoration:none;white-space:nowrap;transition:all var(--transition)}
 .cta-small-btn:hover{opacity:0.85;text-decoration:none;color:var(--bg)}
-
-/* FOOTER */
 .footer{border-top:1px solid var(--border);padding:32px 24px;text-align:center}
 .footer-text{font-family:var(--mono);font-size:12px;color:var(--text3)}
 .footer-text a{color:var(--accent)}
-
-/* MISC */
 .note{font-size:12px;color:var(--text3);font-style:italic;margin-top:16px;padding:12px;background:var(--bg3);border-radius:8px;border-left:3px solid var(--border2)}
-.flag{color:var(--crit);font-weight:600}
-.gap-indicator{font-family:var(--mono);font-size:12px;color:var(--high);font-weight:700}
 .cost-stat{background:var(--crit-bg);border:1px solid var(--crit);border-radius:8px;padding:16px 20px;margin:16px 0}
 .cost-stat-label{font-family:var(--mono);font-size:10px;color:var(--crit);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px}
 .cost-stat-value{font-size:18px;font-weight:700;color:var(--text)}
-
-@media print{
-  .nav,.icon-btn,.nav-cta,.cta-small,.hamburger,.mobile-menu{display:none!important}
-  body{background:#fff;color:#000}
-  .section{break-inside:avoid;page-break-after:auto}
-  .data-card,.finding-item,.opp-card,.table-wrap,.cta-large{break-inside:avoid}
-}
-@media(max-width:640px){
-  .header-inner{flex-direction:row;flex-wrap:wrap;padding:20px 16px 0}
-  .header-right{order:0}
-  .header-title{font-size:22px}
-  .header-meta{padding:12px 16px 20px;font-size:10px}
-  .section{padding:32px 16px}
-
-  .hamburger{display:block}
-  .nav-inner{display:none}
-  .nav{position:relative}
-
-  .score-number{font-size:56px}
-  .cta-small{flex-direction:column;text-align:center}
-}
+@media print{.nav,.icon-btn,.nav-cta,.cta-small,.hamburger,.mobile-menu{display:none!important}body{background:#fff;color:#000}.section{break-inside:avoid;page-break-after:auto}.data-card,.finding-item,.opp-card,.table-wrap,.cta-large{break-inside:avoid}.finding-item a[target="_blank"]::after,.finding-detail a[target="_blank"]::after,.finding-src a[target="_blank"]::after,.finding-text a[target="_blank"]::after,.finding-source a[target="_blank"]::after,.data-table td a[target="_blank"]::after{content:none}}
+@media(max-width:640px){.header-inner{flex-direction:row;flex-wrap:wrap;padding:20px 16px 0}.header-right{order:0}.header-title{font-size:22px}.header-meta{padding:12px 16px 20px;font-size:10px}.section{padding:32px 16px}.hamburger{display:block}.nav-inner{display:none}.nav{position:sticky}.score-number{font-size:56px}.cta-small{flex-direction:column;text-align:center}}
 </style>
 </head>
 <body>
-<!-- HEADER -->
+
 <header class="header">
   <div class="header-inner">
     <div class="header-left">
       <div class="header-tag">Digital Marketing &amp; Online Health Dossier</div>
       <div class="header-title">All Year Cooling Audit Report</div>
-      <div class="header-sub">All Year Cooling and Heating, Inc. &middot; Coral Springs, FL &middot; HVAC + Plumbing</div>
+      <div class="header-sub">All Year Cooling and Heating, Inc. // Coral Springs // HVAC + Plumbing</div>
     </div>
     <div class="header-right">
       <button class="icon-btn" id="themeToggle" title="Toggle theme">&#9790;</button>
@@ -202,12 +130,11 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
   </div>
   <div class="header-meta">
     <span>&#128197; Sep 5, 2026</span>
-    <span>&#128269; Audit by BoostCon</span>
+    <span>&#128269; Audit by <a href="https://boostconhq.com/?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" target="_blank">Boostcon</a></span>
     <span>&#9889; AI Consulting for Home Services</span>
   </div>
 </header>
 
-<!-- STICKY NAV -->
 <nav class="nav" id="mainNav">
   <div class="nav-inner">
     <a href="#score" class="nav-link">01 Score</a>
@@ -216,7 +143,7 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
     <a href="#benchmark" class="nav-link">04 Benchmark</a>
     <a href="#broken" class="nav-link">05 Broken Items</a>
     <a href="#opportunities" class="nav-link">06 Opportunities</a>
-    <a href="https://www.boostconhq.com/book" class="nav-cta" target="_blank">Book a Call</a>
+    <a href="https://www.boostconhq.com/book?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" class="nav-cta" target="_blank">Book a Call</a>
   </div>
   <button class="hamburger" id="hamburger" title="Menu">&#9776;</button>
   <div class="mobile-menu" id="mobileMenu">
@@ -226,10 +153,10 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
     <a href="#benchmark" class="nav-link">04 Benchmark</a>
     <a href="#broken" class="nav-link">05 Broken Items</a>
     <a href="#opportunities" class="nav-link">06 Opportunities</a>
-    <a href="https://www.boostconhq.com/book" class="nav-cta" target="_blank">Book a Call</a>
+    <a href="https://www.boostconhq.com/book?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" class="nav-cta" target="_blank">Book a Call</a>
   </div>
 </nav>
-<!-- 01 SCORE -->
+
 <section class="section" id="score">
   <div class="section-num">01</div>
   <div class="section-title">Composite Online Health Score</div>
@@ -237,216 +164,274 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
     <div class="score-big">
       <div><span class="score-number">58</span><span class="score-out-of">/100</span></div>
       <div class="score-verdict">Moderate Health</div>
-      <div class="score-desc">Strong brand and review foundation with 4.7 stars across approximately 2,600 Google reviews and 52 years of history. But significant gaps in organic search visibility, NAP consistency, and website performance are actively suppressing rankings and losing market share to competitors on the same street.</div>
+      <div class="score-desc">Strong brand and review foundation with 4.7 stars across ~2,600 Google reviews and 52 years of history. But significant gaps in organic search visibility, NAP consistency, and website performance are actively suppressing rankings and losing market share.</div>
     </div>
     <div class="score-breakdown">
       <div class="score-row"><span class="score-label">Google Presence</span><div class="score-bar-wrap"><div class="score-bar" style="width:56%;background:var(--high)"></div></div><span class="score-val">14/25</span></div>
       <div class="score-row"><span class="score-label">Website Health</span><div class="score-bar-wrap"><div class="score-bar" style="width:55%;background:var(--high)"></div></div><span class="score-val">11/20</span></div>
       <div class="score-row"><span class="score-label">SEO</span><div class="score-bar-wrap"><div class="score-bar" style="width:45%;background:var(--crit)"></div></div><span class="score-val">9/20</span></div>
-      <div class="score-row"><span class="score-label">Reputation / Reviews</span><div class="score-bar-wrap"><div class="score-bar" style="width:73%;background:var(--high)"></div></div><span class="score-val">11/15</span></div>
+      <div class="score-row"><span class="score-label">Reputation / Reviews</span><div class="score-bar-wrap"><div class="score-bar" style="width:73%;background:var(--low)"></div></div><span class="score-val">11/15</span></div>
       <div class="score-row"><span class="score-label">Social Media</span><div class="score-bar-wrap"><div class="score-bar" style="width:50%;background:var(--high)"></div></div><span class="score-val">5/10</span></div>
       <div class="score-row"><span class="score-label">Paid Advertising</span><div class="score-bar-wrap"><div class="score-bar" style="width:70%;background:var(--high)"></div></div><span class="score-val">7/10</span></div>
     </div>
   </div>
+
   <div class="cost-stat">
     <div class="cost-stat-label">The Cost of Inaction</div>
-    <div class="cost-stat-value">Every month these issues stay unfixed, All Year Cooling is losing an estimated 60 to 120 service calls to competitors who rank in the top 3 of the Map Pack. At an average ticket of $450, that is $27,000 to $54,000 in lost revenue per month. Over a year, that is $324,000 to $648,000 walking out the door to Art Plumbing and Snyder AC. The 18.2 second mobile load time is actively suppressing Google rankings across every keyword.</div>
+    <div class="cost-stat-value">Every month these issues stay unfixed, All Year Cooling is losing an estimated 60 to 120 service calls to competitors who rank in the top 3 of the Map Pack. At an average ticket of $900, that is <strong>$54,000 to $108,000 in lost revenue per month</strong>. Over a year, that is <strong>$648,000 to $1,296,000 walking out the door</strong> to Art Plumbing and Snyder AC. The 18.2 second mobile load time is actively suppressing Google rankings across every keyword.</div>
   </div>
-  <div class="note">Scoring methodology: Google Presence (25), Website Health (20), SEO (20), Reputation (15), Social (10), Paid Ads (10). Heavy deductions applied for Map Pack rank #9 in the own market, 18.2 second mobile load time, Core Web Vitals near zero, 5+ phone numbers in circulation, and 52% listing accuracy. GHL overall score: 61%. Source code items were confirmed through GHL data.</div>
+
+  <div class="note">Scoring methodology: Google Presence (25), Website Health (20), SEO (20), Reputation (15), Social (10), Paid Ads (10). Heavy deductions applied for Map Pack rank #9, 18.2 second mobile load time, Core Web Vitals near zero, 5+ phone numbers, and 52% listing accuracy.</div>
+
   <div class="cta-large" style="margin-top:32px">
     <div class="cta-title">Stop the Revenue Bleeding</div>
     <div class="cta-desc">Every day without fixed page speed, unified NAP, and a review engine is a day your competitors eat your lunch. Book a 30 minute call and we will show you exactly where the money is leaking and how to plug it.</div>
-    <a href="https://www.boostconhq.com/book" class="cta-btn" target="_blank">Book a Call</a>
+    <a href="https://www.boostconhq.com/book?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" class="cta-btn" target="_blank">Book a Call</a>
     <div class="cta-contact">info@boostconhq.com &middot; (541) 262-BOOST &middot; (541) 262-6678</div>
   </div>
 </section>
-<!-- 02 COMPANY -->
+
 <section class="section" id="company">
   <div class="section-num">02</div>
   <div class="section-title">Company Identification</div>
   <div class="cards-grid">
-    <div class="data-card"><div class="data-card-label">Legal Name</div><div class="data-card-value">All Year Cooling and Heating, Inc.</div><div class="data-card-sub">Source: BBB</div></div>
-    <div class="data-card"><div class="data-card-label">DBA / Brand Names</div><div class="data-card-value">All Year Cooling; All Year AC; All Year Air; Florida HVAC Company Inc</div><div class="data-card-sub">Public brand: All Year Cooling &amp; Plumbing</div></div>
-    <div class="data-card"><div class="data-card-label">Website</div><div class="data-card-value"><a href="https://allyearcooling.com" target="_blank">allyearcooling.com</a></div><div class="data-card-sub">WordPress + Yoast SEO &middot; Managed by Simple SEO Group</div></div>
-    <div class="data-card"><div class="data-card-label">President</div><div class="data-card-value">Tommy Smith</div><div class="data-card-sub">Source: BBB and press releases</div></div>
+    <div class="data-card"><div class="data-card-label">Legal Name</div><div class="data-card-value">All Year Cooling and Heating, Inc.</div><div class="data-card-sub">Source: <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a></div></div>
+    <div class="data-card"><div class="data-card-label">DBA / Brand Names</div><div class="data-card-value">All Year Cooling; All Year AC; All Year Air</div><div class="data-card-sub">Public brand: All Year Cooling &amp; Plumbing</div></div>
+    <div class="data-card"><div class="data-card-label">Website</div><div class="data-card-value"><a href="https://allyearcooling.com" target="_blank">allyearcooling.com</a></div><div class="data-card-sub">WordPress + Yoast SEO</div></div>
+    <div class="data-card"><div class="data-card-label">President</div><div class="data-card-value">Tommy Smith</div><div class="data-card-sub">Source: <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a></div></div>
     <div class="data-card"><div class="data-card-label">Founded</div><div class="data-card-value">December 27, 1973</div><div class="data-card-sub">52 years in business</div></div>
     <div class="data-card"><div class="data-card-label">HQ Address</div><div class="data-card-value">4300 NW 124th Ave</div><div class="data-card-sub">Coral Springs, FL 33065</div></div>
     <div class="data-card"><div class="data-card-label">Second Location</div><div class="data-card-value">6203 Janes Lane</div><div class="data-card-sub">Naples, FL 34109</div></div>
-    <div class="data-card"><div class="data-card-label">Estimated Revenue</div><div class="data-card-value">$19.6M</div><div class="data-card-sub">Source: RocketReach</div></div>
-    <div class="data-card"><div class="data-card-label">Estimated Employees</div><div class="data-card-value">Approximately 100</div><div class="data-card-sub">Source: PitchBook and Indeed</div></div>
-    <div class="data-card"><div class="data-card-label">Parent Company</div><div class="data-card-value">None found</div><div class="data-card-sub">Independent and family owned. No PE or roll up found.</div></div>
+    <div class="data-card"><div class="data-card-label">Estimated Revenue</div><div class="data-card-value">$19.6M</div><div class="data-card-sub">Source: <a href="https://rocketreach.co/all-year-cooling-profile_b4b9b5d5fb0b61c7" target="_blank">RocketReach</a></div></div>
+    <div class="data-card"><div class="data-card-label">Estimated Employees</div><div class="data-card-value">~100</div><div class="data-card-sub">Source: PitchBook / Indeed</div></div>
+    <div class="data-card"><div class="data-card-label">Parent Company</div><div class="data-card-value">None found</div><div class="data-card-sub">Independent and family owned</div></div>
   </div>
+
   <div class="section-title" style="font-size:16px;margin-top:32px">All Phone Numbers Found</div>
   <div class="table-wrap"><table>
     <tr><th>Phone Number</th><th>Where Found</th><th>Notes</th></tr>
-    <tr><td>(954) 646-4729</td><td>Google Business Profile</td><td>GHL confirmed. Differs from every other listed number.</td></tr>
-    <tr><td>(954) 507-0702</td><td>Website header</td><td>Primary web number. Splits call attribution from GBP.</td></tr>
-    <tr><td>888.204.5554</td><td>Website footer</td><td>Third number on the same website.</td></tr>
-    <tr><td>(888) 820-8705</td><td>BBB</td><td>Fourth number. Damages NAP consistency.</td></tr>
-    <tr><td>866-646-4778</td><td>Facebook</td><td>Fifth number. Further fragments the citation profile.</td></tr>
+    <tr><td>(954) 646-4729</td><td><a href="https://maps.google.com/?q=All+Year+Cooling+4300+NW+124th+Ave+Coral+Springs+FL+33065" target="_blank">Google Business Profile</a></td><td>GHL confirmed. Differs from every other listed number.</td></tr>
+    <tr><td>(954) 507-0702</td><td><a href="https://allyearcooling.com" target="_blank">Website header</a></td><td>Primary web number. Splits call attribution from GBP.</td></tr>
+    <tr><td>888.204.5554</td><td><a href="https://allyearcooling.com/contact/" target="_blank">Website footer</a></td><td>Third number on the same website.</td></tr>
+    <tr><td>(888) 820-8705</td><td><a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a></td><td>Fourth number. Damages NAP consistency.</td></tr>
+    <tr><td>866-646-4778</td><td><a href="https://www.facebook.com/AllYearCooling/" target="_blank">Facebook</a></td><td>Fifth number. Further fragments citations.</td></tr>
   </table></div>
+
   <div class="section-title" style="font-size:16px;margin-top:32px">Social Media Profiles</div>
   <div class="table-wrap"><table>
     <tr><th>Platform</th><th>Followers</th><th>Status</th></tr>
-    <tr><td>Facebook</td><td>9,784 likes</td><td>Active. Promos, behind the scenes, community, and humor.</td></tr>
-    <tr><td>Instagram</td><td>Approximately 7,700</td><td>1,468 posts with 0.1 to 0.3% engagement.</td></tr>
-    <tr><td>YouTube</td><td>335 subscribers</td><td>Dormant for approximately 1 year. 89 videos, mostly television commercials with paid views.</td></tr>
-    <tr><td>LinkedIn</td><td>991 followers</td><td>Recruiting only. 55 employees listed. Low engagement.</td></tr>
-    <tr><td>TikTok</td><td>10 followers</td><td>Abandoned. 36 total likes.</td></tr>
-    <tr><td>X / Twitter</td><td>346 followers</td><td>Posts regularly but receives approximately 40 views per post.</td></tr>
+    <tr><td><a href="https://www.facebook.com/AllYearCooling/" target="_blank">Facebook</a></td><td>9,784 likes</td><td>Active. Promos, community, humor.</td></tr>
+    <tr><td><a href="https://www.instagram.com/allyearcooling/" target="_blank">Instagram</a></td><td>~7,700</td><td>1,468 posts with 0.1 to 0.3% engagement.</td></tr>
+    <tr><td><a href="https://www.youtube.com/@allyearcooling" target="_blank">YouTube</a></td><td>335 subscribers</td><td>Dormant ~1 year. 89 videos, mostly TV commercials.</td></tr>
+    <tr><td><a href="https://www.linkedin.com/company/all-year-cooling" target="_blank">LinkedIn</a></td><td>991 followers</td><td>Recruiting only. Low engagement.</td></tr>
+    <tr><td><a href="https://www.tiktok.com/@allyearcooling" target="_blank">TikTok</a></td><td>10 followers</td><td>Abandoned. 36 total likes.</td></tr>
+    <tr><td><a href="https://x.com/allyearch" target="_blank">X / Twitter</a></td><td>346 followers</td><td>Posts regularly but ~40 views per post.</td></tr>
   </table></div>
-  <div class="note">Family owned claim: VERIFIED. All Year Cooling and Heating, Inc. was founded on December 27, 1973. It is independently operated, with no PE acquisition or roll up found. Tommy Smith is President. Sources: BBB, RocketReach, PitchBook, and press releases.</div>
-  <div class="cta-small"><div class="cta-small-text"><strong>5 phone numbers. 6 social platforms with only one meaningful traction channel.</strong> Every inconsistency is a signal to Google and prospects that this business is not buttoned up. Let us fix it.</div><a href="https://www.boostconhq.com/book" class="cta-small-btn" target="_blank">Book a Call</a></div>
+
+  <p class="note">Family owned: VERIFIED. Founded Dec 27, 1973. Independent, no PE or roll up found. Tommy Smith is President. Sources: <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a>, RocketReach, PitchBook.</p>
+
+  <div class="cta-small">
+    <div class="cta-small-text"><strong>5 phone numbers. 6 social platforms with only one meaningful traction channel.</strong> Every inconsistency is a signal to Google and prospects that this business is not buttoned up. Let us fix it.</div>
+    <a href="https://www.boostconhq.com/book?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" class="cta-small-btn" target="_blank">Book a Call</a>
+  </div>
 </section>
-<!-- 03 FINDINGS -->
+
 <section class="section" id="findings">
   <div class="section-num">03</div>
   <div class="section-title">Key Findings</div>
   <div class="table-wrap"><table>
-    <tr><th>Category</th><th>Finding</th><th>Severity</th><th>Source</th></tr>
-    <tr><td>Google Presence</td><td class="finding-text">Google Business Profile is claimed and verified. Address, website, photos, hours, and phone were confirmed by GHL. Google rating is 4.7 with approximately 2,582 reviews. The profile is healthy, but the business still ranks #9 in its own market.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">GHL, Google, Trane dealer page</td></tr>
-    <tr><td>Map Pack Ranking</td><td class="finding-text">Ranks #9 on Google Maps for "air conditioning contractor near me" across a 31.1 mile Coral Springs radius. This is below the 3 pack threshold. Competitors with fewer years in business are outranking a 52 year brand.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">GHL heatmap data</td></tr>
+    <tr><th>Category</th><th class="finding-text">Finding</th><th>Severity</th><th class="finding-source">Source</th></tr>
+    <tr><td>Google Presence</td><td class="finding-text">Google Business Profile is claimed and verified. Address, website, photos, hours, and phone confirmed by GHL. Rating is 4.7 with ~2,582 reviews. The profile is healthy, but the business still ranks #9 in its own market.</td><td><span class="badge badge-high">High</span></td><td class="finding-source"><a href="https://maps.google.com/?q=All+Year+Cooling+4300+NW+124th+Ave+Coral+Springs+FL+33065" target="_blank">GHL</a>, Google, <a href="https://www.trane.com/residential/en/dealers/all-year-cooling-coral-springs-florida-1025082/" target="_blank">Trane dealer page</a></td></tr>
+    <tr><td>Map Pack Ranking</td><td class="finding-text">Ranks #9 on Google Maps for "air conditioning contractor near me" across a 31.1 mile Coral Springs radius. Below the 3 pack threshold. Competitors with fewer years in business are outranking a 52 year brand.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">GHL heatmap data</td></tr>
     <tr><td>Organic Rankings</td><td class="finding-text">Not on Page 1 for "AC repair Coral Springs", "HVAC Coral Springs", or "AC installation Coral Springs." Competitors own Page 1 while All Year Cooling is absent from high intent searches in its home market.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">Google SERP analysis</td></tr>
-    <tr><td>NAP Consistency</td><td class="finding-text">Five different phone numbers appear across Google Business Profile, website header, website footer, BBB, and Facebook. GHL confirms only 52% of 31 checked citations are accurate: 16 exact matches and 15 no matches. This splits call attribution and destroys local SEO trust.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">GHL, BBB, Facebook, website</td></tr>
+    <tr><td>NAP Consistency</td><td class="finding-text">Five different phone numbers appear across GBP, website header, footer, BBB, and Facebook. GHL confirms only 52% of 31 checked citations are accurate. This splits call attribution and destroys local SEO trust.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source"><a href="https://maps.google.com/?q=All+Year+Cooling+4300+NW+124th+Ave+Coral+Springs+FL+33065" target="_blank">GHL</a>, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a>, <a href="https://www.facebook.com/AllYearCooling/" target="_blank">Facebook</a>, <a href="https://allyearcooling.com" target="_blank">Website</a></td></tr>
     <tr><td>Website Performance</td><td class="finding-text">Mobile page load time is 18.2 seconds. GHL marked the site Slow. Global average is 0.2 seconds. This is catastrophic for mobile users and actively suppresses Google rankings.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">GHL PageSpeed data</td></tr>
-    <tr><td>Core Web Vitals</td><td class="finding-text">Page Speed is 0%, Large Contentful Paint is 6%, Interactivity is 6%, and Overall SEO is 3%. Near zero scores mean Google is evaluating the site as a poor experience.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">GHL Core Web Vitals data</td></tr>
-    <tr><td>Tech Stack</td><td class="finding-text">Google Ads campaigns, Google Ads conversion tracking, Google Tag Manager, Google Analytics, and Meta Pixel were detected by GHL. This confirms presence, not correct firing, attribution, or revenue tracking.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">GHL report</td></tr>
-    <tr><td>Reputation</td><td class="finding-text">Google is 4.7 with approximately 2,582 reviews. Yelp is 4.0 with 319 reviews. BBB customer reviews are 3.38 with 16 reviews. The lower ratings on third party platforms expose a service quality gap Google does not show.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Google, Yelp, BBB</td></tr>
-    <tr><td>Negative Sentiment</td><td class="finding-text">GHL analyzed 50 reviews and found 26% negative. Recurring themes include unanswered phones, callbacks not returned, warranty disputes, repeat unresolved repairs, appointment delays, and communication failures after payment.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">GHL reputation analysis, Yelp, BBB</td></tr>
-    <tr><td>Review Volume Gap</td><td class="finding-text">All Year Cooling has approximately 2,580 Google reviews. Art Plumbing has 10,560, roughly 4 times more. Snyder AC has 29,000 total across platforms, roughly 11 times more. Review volume is a primary local ranking and trust signal.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">Google, Trane dealer page, Birdeye</td></tr>
-    <tr><td>Hours Inconsistency</td><td class="finding-text">The website says 24/7 while directories show 7:30 AM to 10 PM. Conflicting hours confuse customers and weaken Google's confidence in the profile.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Website, GHL, BBB, Yelp, Angi</td></tr>
-    <tr><td>Chat Coverage</td><td class="finding-text">No live chat or AI chat widget was found. This matters because negative reviews repeatedly mention unanswered phones and missing callbacks. After hours leads have no alternate conversion path.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">GHL, website inspection, review themes</td></tr>
-    <tr><td>Social Engagement</td><td class="finding-text">Instagram has 1,468 posts but only 0.1 to 0.3% engagement. YouTube has been dormant for approximately 1 year. TikTok has 10 followers and 36 total likes. Volume is not translating into reach or leads.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Instagram, YouTube, TikTok</td></tr>
-    <tr><td>Plumbing Keywords</td><td class="finding-text">The newer plumbing service line has no meaningful keyword presence for "plumber Coral Springs" or "drain cleaning Coral Springs." This is an untapped high intent market.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Google SERP analysis</td></tr>
+    <tr><td>Core Web Vitals</td><td class="finding-text">Page Speed is 0%, LCP is 6%, Interactivity is 6%, and Overall SEO is 3%. Near zero scores mean Google is evaluating the site as a poor experience.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">GHL Core Web Vitals data</td></tr>
+    <tr><td>Tech Stack</td><td class="finding-text">Google Ads campaigns, conversion tracking, GTM, GA4, and Meta Pixel were detected by GHL. Confirms presence, not correct firing, attribution, or revenue tracking.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">GHL report</td></tr>
+    <tr><td>Reputation</td><td class="finding-text">Google is 4.7 with ~2,582 reviews. Yelp is 4.0 with 319 reviews. BBB customer reviews are 3.38 with 16 reviews. Lower ratings on third party platforms expose a service quality gap Google does not show.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Google, <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Yelp</a>, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a></td></tr>
+    <tr><td>Negative Sentiment</td><td class="finding-text">GHL analysis shows 26% negative of 50 reviews analyzed. Recurring themes: unanswered phones, callbacks not returned, warranty disputes, repeat unresolved repairs, appointment delays, and communication failures after payment.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">GHL reputation analysis, <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Yelp</a>, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a></td></tr>
+    <tr><td>Review Volume Gap</td><td class="finding-text">All Year has ~2,580 Google reviews. Art Plumbing has 10,560 (~4x more). Snyder AC has 29,000 total across platforms (~11x more). Review volume is a primary local ranking and trust signal.</td><td><span class="badge badge-crit">Critical</span></td><td class="finding-source">Google, <a href="https://www.trane.com/residential/en/dealers/all-year-cooling-coral-springs-florida-1025082/" target="_blank">Trane</a>, Birdeye</td></tr>
+    <tr><td>Hours Inconsistency</td><td class="finding-text">The website says 24/7 while directories show 7:30 AM to 10 PM. Conflicting hours confuse customers and weaken Google's confidence in the business profile.</td><td><span class="badge badge-high">High</span></td><td class="finding-source"><a href="https://allyearcooling.com" target="_blank">Website</a>, GHL, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a>, <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Yelp</a>, <a href="https://www.homeadvisor.com/rated.AllYearCooling.19297135.html" target="_blank">Angi</a></td></tr>
+    <tr><td>Chat Coverage</td><td class="finding-text">No live chat or AI chat widget found. Negative reviews repeatedly mention unanswered phones and missing callbacks. After hours leads have no alternate conversion path.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">GHL, <a href="https://allyearcooling.com" target="_blank">Website</a>, review themes</td></tr>
+    <tr><td>Social Engagement</td><td class="finding-text">Instagram has 1,468 posts but only 0.1 to 0.3% engagement. YouTube dormant ~1 year. TikTok has 10 followers and 36 total likes. Volume is not translating into reach or leads.</td><td><span class="badge badge-high">High</span></td><td class="finding-source"><a href="https://www.instagram.com/allyearcooling/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/@allyearcooling" target="_blank">YouTube</a>, <a href="https://www.tiktok.com/@allyearcooling" target="_blank">TikTok</a></td></tr>
+    <tr><td>Plumbing Keywords</td><td class="finding-text">The newer plumbing service line has no meaningful keyword presence for "plumber Coral Springs" or "drain cleaning Coral Springs." Untapped high intent market.</td><td><span class="badge badge-high">High</span></td><td class="finding-source">Google SERP analysis</td></tr>
     <tr><td>AI Crawler Blocking</td><td class="finding-text">GPTBot, ClaudeBot, CCBot, and Google Extended are blocked in robots.txt. The company is invisible to major AI search crawlers while AI answers increasingly influence local buying decisions.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">robots.txt inspection</td></tr>
-    <tr><td>Sitemap Hygiene</td><td class="finding-text">Test and junk pages including /dummy-test-page/ and /education/ remain in the sitemap. These pages signal poor site hygiene to crawlers.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">allyearcooling.com sitemap</td></tr>
+    <tr><td>Sitemap Hygiene</td><td class="finding-text">Test and junk pages including /dummy-test-page/ and /education/ remain in the sitemap. Signal poor site hygiene to crawlers.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">Sitemap analysis</td></tr>
     <tr><td>Schema Markup</td><td class="finding-text">Yoast is present, but LocalBusiness and HVAC JSON LD were not confirmed through the Rich Results Test. Missing structured data can eliminate rich result opportunities.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">Website source inspection</td></tr>
-    <tr><td>Blog Quality</td><td class="finding-text">The site has 269 pages and 295 blog posts, but hundreds are thin promotional posts from 2022. Volume without depth dilutes content quality signals.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">Sitemap analysis, blog review</td></tr>
-    <tr><td>Directory Gaps</td><td class="finding-text">No listing was found on Thumbtack or Yellow Pages. Missing citation equity and lead channels while competitors maintain broader directory coverage.</td><td><span class="badge badge-low">Low</span></td><td class="finding-source">Thumbtack and Yellow Pages searches</td></tr>
-    <tr><td>Review Widget</td><td class="finding-text">The website widget shows 1,873 Google reviews while the current count is approximately 2,580. The company is underselling its own reputation by more than 700 reviews.</td><td><span class="badge badge-low">Low</span></td><td class="finding-source">allyearcooling.com homepage</td></tr>
+    <tr><td>Blog Quality</td><td class="finding-text">269 pages and 295 blog posts, but hundreds are thin promotional posts from 2022. Volume without depth dilutes content quality signals.</td><td><span class="badge badge-med">Medium</span></td><td class="finding-source">Sitemap analysis, blog review</td></tr>
+    <tr><td>Directory Gaps</td><td class="finding-text">No listing found on Thumbtack or Yellow Pages. Missing citation equity and potential lead channels while competitors maintain broader directory coverage.</td><td><span class="badge badge-low">Low</span></td><td class="finding-source">Thumbtack and Yellow Pages searches</td></tr>
+    <tr><td>Review Widget</td><td class="finding-text">The website widget shows 1,873 Google reviews while the current count is ~2,580. The company is underselling its own reputation by 700+ reviews.</td><td><span class="badge badge-low">Low</span></td><td class="finding-source"><a href="https://allyearcooling.com" target="_blank">Website</a></td></tr>
   </table></div>
-  <div class="note">6 Critical findings. 7 High severity issues. GHL checks whether systems are present. We check whether they are functional, attributable, and producing revenue. Installed but broken is worse than not installed.</div>
-  <div class="cta-small"><div class="cta-small-text"><strong>Your site takes 18 seconds to load on mobile. You rank #9 in your own market. Five phone numbers split your call data.</strong> How many more calls can you afford to lose?</div><a href="https://www.boostconhq.com/book" class="cta-small-btn" target="_blank">Book a Call</a></div>
+
+  <p class="note">6 Critical findings. 7 High severity issues. GHL checks whether systems are present. We check whether they are functional, attributable, and producing revenue. Installed but broken is worse than not installed.</p>
+
+  <div class="cta-small">
+    <div class="cta-small-text"><strong>Your site takes 18 seconds to load on mobile. You rank #9 in your own market. Five phone numbers split your call data.</strong> How many more calls can you afford to lose?</div>
+    <a href="https://www.boostconhq.com/book?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" class="cta-small-btn" target="_blank">Book a Call</a>
+  </div>
 </section>
-<!-- 04 BENCHMARK -->
+
 <section class="section" id="benchmark">
   <div class="section-num">04</div>
   <div class="section-title">Competitive Benchmark: Coral Springs Map Pack</div>
   <div class="table-wrap"><table>
     <tr><th>Rank (GHL)</th><th>Company</th><th>Rating</th><th>Reviews</th><th>Notes</th></tr>
     <tr><td>#1</td><td>Reliable AC Services</td><td>4.9</td><td>380</td><td>Smaller but high rated. 12450 Wiles Rd.</td></tr>
-    <tr><td>#2</td><td>Snyder AC / Air America AC</td><td>4.7</td><td>6,260 / 29,000 total</td><td>Strong local SEO and large review base. Air America was acquired by Snyder.</td></tr>
-    <tr><td>#3</td><td>Air Pros</td><td>4.9</td><td>950</td><td>Bankruptcy filed March 2025. Weakening despite a strong rating.</td></tr>
-    <tr><td>#4</td><td>Blue Mountain AC</td><td>5.0</td><td>392</td><td>Smaller provider with a perfect rating.</td></tr>
-    <tr><td>#5</td><td>Brisk Air Coral Springs</td><td>4.8</td><td>393</td><td>Local competitor on the same street as All Year Cooling.</td></tr>
-    <tr><td>#6</td><td>Alpha Breezy HVAC</td><td>4.9</td><td>49</td><td>Very small commercial and residential provider.</td></tr>
-    <tr><td>#7</td><td>Aire Serv of Coral Springs</td><td>5.0</td><td>181</td><td>Franchise provider with a perfect rating.</td></tr>
-    <tr><td>#8</td><td>Art Plumbing, AC &amp; Electric</td><td>4.8</td><td>10,560</td><td>Same street as All Year Cooling. Aggressive advertiser. Claims 25,000+ reviews across platforms.</td></tr>
-    <tr><td>#9</td><td>All Year Cooling and Plumbing</td><td>4.7</td><td>Approximately 2,580</td><td>Subject company. 52 years in business, but ranked #9 in its own market.</td></tr>
-    <tr><td>#10</td><td>Expert Cool AC Services</td><td>5.0</td><td>314</td><td>Smaller provider with a perfect rating.</td></tr>
+    <tr><td>#2</td><td>Snyder AC / Air America AC</td><td>4.7</td><td>6,260 / 29,000 total</td><td>Strong local SEO and large review base.</td></tr>
+    <tr><td>#3</td><td>Air Pros</td><td>4.9</td><td>950</td><td>Bankruptcy filed March 2025. Weakening.</td></tr>
+    <tr><td>#4</td><td>Blue Mountain AC</td><td>5.0</td><td>392</td><td>Smaller, perfect rating.</td></tr>
+    <tr><td>#5</td><td>Brisk Air Coral Springs</td><td>4.8</td><td>393</td><td>Local competitor on the same street.</td></tr>
+    <tr><td>#6</td><td>Alpha Breezy HVAC</td><td>4.9</td><td>49</td><td>Very small. Commercial + residential.</td></tr>
+    <tr><td>#7</td><td>Aire Serv of Coral Springs</td><td>5.0</td><td>181</td><td>Franchise. Perfect rating.</td></tr>
+    <tr><td>#8</td><td>Art Plumbing, AC &amp; Electric</td><td>4.8</td><td>10,560</td><td>Same street as All Year. Aggressive advertiser.</td></tr>
+    <tr style="background:var(--accent-glow)"><td style="color:var(--accent);font-weight:600">#9</td><td style="color:var(--accent);font-weight:600">All Year Cooling and Plumbing</td><td style="color:var(--accent);font-weight:600">4.7</td><td style="color:var(--accent);font-weight:600">~2,580</td><td style="color:var(--accent);font-weight:600">Subject company. 52 years in business, ranked #9.</td></tr>
+    <tr><td>#10</td><td>Expert Cool AC Services</td><td>5.0</td><td>314</td><td>Smaller, perfect rating.</td></tr>
   </table></div>
-  <div class="cost-stat"><div class="cost-stat-label">Competitor Financial Distress Signal</div><div class="cost-stat-value">Air Pros USA filed Chapter 11 bankruptcy on March 16, 2025, with more than $250M in secured debt and business units being sold for approximately $155M. This collapse displaced South Florida HVAC customers who need a new provider. The demand is available now, but All Year Cooling is ranked #9 while smaller competitors capture the search.</div></div>
-  <div class="cost-stat"><div class="cost-stat-label">What the Gap Costs You</div><div class="cost-stat-value">Art Plumbing has roughly 4 times more reviews and Snyder AC has roughly 11 times more total reviews. When a Coral Springs homeowner searches for AC repair near me, All Year Cooling is buried below competitors on the same street. Closing this gap is not optional if you want to compete for the 1,200+ monthly searches for AC repair Coral Springs that are flowing to competitors.</div></div>
-  <div class="note">Map Pack rankings are from the GHL heatmap for "air conditioning contractor near me" across a 31.1 mile Coral Springs radius. All top competitors are on or near NW 124th Ave. Sources: GHL Marketing Audit Report, American Standard dealer page, Trane dealer page, Birdeye, and direct competitor review.</div>
-  <div class="cta-small"><div class="cta-small-text"><strong>Air Pros went bankrupt and left thousands of South Florida customers stranded.</strong> Those customers are searching for a new HVAC company right now. Are they finding All Year Cooling, or Snyder AC?</div><a href="https://www.boostconhq.com/book" class="cta-small-btn" target="_blank">Book a Call</a></div>
+
+  <div class="cost-stat">
+    <div class="cost-stat-label">Competitor Financial Distress Signal</div>
+    <div class="cost-stat-value"><strong>Market Disruption Opportunity:</strong> Air Pros USA filed Chapter 11 bankruptcy on March 16, 2025, with >$250M in secured debt. This collapse displaced South Florida HVAC customers who need a new provider. The demand is available now, but All Year Cooling is ranked #9 while smaller competitors capture the search.</div>
+  </div>
+
+  <div class="cost-stat">
+    <div class="cost-stat-label">What the Gap Costs You</div>
+    <div class="cost-stat-value">Art Plumbing has ~4x more reviews and Snyder AC has ~11x more total reviews. When a Coral Springs homeowner searches for AC repair near me, All Year Cooling is buried below competitors on the same street. Closing this gap is not optional if you want to compete for the 1,200+ monthly searches for AC repair Coral Springs.</div>
+  </div>
+
+  <p class="note">Map Pack rankings are from GHL heatmap for "air conditioning contractor near me" across a 31.1 mile Coral Springs radius. Sources: GHL, <a href="https://www.trane.com/residential/en/dealers/all-year-cooling-coral-springs-florida-1025082/" target="_blank">Trane dealer page</a>.</p>
+
+  <div class="cta-small">
+    <div class="cta-small-text"><strong>Air Pros went bankrupt and left thousands of South Florida customers stranded.</strong> Those customers are searching for a new HVAC company right now. Are they finding All Year Cooling, or Snyder AC?</div>
+    <a href="https://www.boostconhq.com/book?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" class="cta-small-btn" target="_blank">Book a Call</a>
+  </div>
 </section>
-<!-- 05 BROKEN ITEMS -->
+
 <section class="section" id="broken">
   <div class="section-num">05</div>
   <div class="section-title">Broken and Improvable Items</div>
-  <div class="section-title" style="font-size:16px;margin-top:28px">Critical (Fix Immediately)</div>
+
+  <div class="section-title" style="font-size:16px;margin-top:0">Critical (Fix Immediately)</div>
   <div class="finding-item crit">
     <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">NAP phone inconsistency: 5+ different numbers</span></div>
-    <div class="finding-detail">Five phone numbers appear across Google Business Profile, the website header, the website footer, BBB, and Facebook. GHL confirms only 52% of 31 citations are accurate. Google algorithm treats phone inconsistency as a trust signal. Five numbers split call attribution and weaken local pack ranking.</div>
+    <div class="finding-detail">Five phone numbers appear across <a href="https://maps.google.com/?q=All+Year+Cooling+4300+NW+124th+Ave+Coral+Springs+FL+33065" target="_blank">Google Business Profile</a>, the <a href="https://allyearcooling.com" target="_blank">website header</a>, the <a href="https://allyearcooling.com/contact/" target="_blank">website footer</a>, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a>, and <a href="https://www.facebook.com/AllYearCooling/" target="_blank">Facebook</a>. GHL confirms only 52% of 31 citations are accurate. Google's algorithm treats phone inconsistency as a trust signal. Five numbers split call attribution and destroy local pack ranking.</div>
     <div class="finding-fix"><strong>Fix:</strong> Choose one canonical phone number across every directory. Use call tracking with one forwarded number. Audit all 31+ citations through BrightLocal or Whitespark.</div>
-    <div class="finding-src">Source: GHL, BBB, Facebook, website</div>
+    <div class="finding-src">Source: <a href="https://maps.google.com/?q=All+Year+Cooling+4300+NW+124th+Ave+Coral+Springs+FL+33065" target="_blank">GHL</a>, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a>, <a href="https://www.facebook.com/AllYearCooling/" target="_blank">Facebook</a>, <a href="https://allyearcooling.com" target="_blank">Website</a></div>
   </div>
+
   <div class="finding-item crit">
     <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">Not ranking on Page 1 for core HVAC keywords</span></div>
     <div class="finding-detail">All Year Cooling is not ranking for AC repair Coral Springs, HVAC Coral Springs, or AC installation Coral Springs. Competitors own Page 1 while a 52 year brand is invisible in its home market.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Prioritize local SEO for core Coral Springs HVAC keywords. Optimize the Coral Springs landing page, build city specific backlinks, and fix page speed before adding more content.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Prioritize local SEO for core Coral Springs HVAC keywords. Optimize the Coral Springs landing page. Build city specific backlinks. Fix page speed first as it is a prerequisite for ranking.</div>
     <div class="finding-src">Source: Google SERP analysis</div>
   </div>
+
   <div class="finding-item crit">
     <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">Mobile page speed: 18.2 seconds</span></div>
-    <div class="finding-detail">GHL confirmed an 18.2 second mobile load time against a global average of 0.2 seconds. This is catastrophic for mobile users and actively suppresses Google rankings.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Compress images, enable lazy loading, remove duplicated carousels, minify CSS and JavaScript, and implement aggressive caching. This is the prerequisite for all other SEO work.</div>
+    <div class="finding-detail">GHL confirmed an 18.2 second mobile load time against a global average of 0.2 seconds. This is catastrophic for mobile users and actively suppresses Google rankings. <a href="https://allyearcooling.com" target="_blank">Visit the site</a> on a phone to see the delay.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Compress images, enable lazy loading, remove duplicated carousels, minify CSS and JavaScript, and implement aggressive caching. This is the single highest priority technical fix.</div>
     <div class="finding-src">Source: GHL PageSpeed data</div>
   </div>
+
   <div class="finding-item crit">
     <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">Core Web Vitals near zero</span></div>
-    <div class="finding-detail">Page Speed is 0%, Large Contentful Paint is 6%, Interactivity is 6%, and Overall SEO is 3%. Google uses these signals when evaluating page experience.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Run a technical SEO sprint. Optimize hero images, reduce server response time, reduce JavaScript execution, remove render blocking resources, and verify every change in PageSpeed Insights.</div>
+    <div class="finding-detail">Page Speed is 0%, LCP is 6%, Interactivity is 6%, and Overall SEO is 3%. Google uses these signals when evaluating page experience. <a href="https://allyearcooling.com" target="_blank">The site</a> is being penalized in search results.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Run a technical SEO sprint. Address LCP by optimizing hero images and reducing server response time. Address INP by reducing JavaScript execution time. Remove render blocking resources.</div>
     <div class="finding-src">Source: GHL Core Web Vitals data</div>
   </div>
+
   <div class="finding-item crit">
     <div class="finding-head"><span class="badge badge-crit">Critical</span><span class="finding-title">Review volume is 3x to 11x lower than top competitors</span></div>
-    <div class="finding-detail">All Year Cooling has approximately 2,580 Google reviews. Art Plumbing has 10,560 and Snyder AC has 29,000 total across platforms. At current velocity, the gap will not close organically.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Deploy post service SMS review requests within 24 hours. Add the GBP review link to technician follow ups and email signatures. Target 50 or more new Google reviews per month.</div>
-    <div class="finding-src">Source: Google, Trane dealer page, Birdeye</div>
+    <div class="finding-detail">All Year has ~2,580 Google reviews. Art Plumbing has 10,560 and Snyder AC has 29,000 total. At current velocity, the gap will not close organically. Review count is a primary local ranking factor.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Deploy post service SMS review requests within 24 hours. Add GBP review links to technician follow ups and email signatures. Target 50+ new Google reviews per month.</div>
+    <div class="finding-src">Source: Google, <a href="https://www.trane.com/residential/en/dealers/all-year-cooling-coral-springs-florida-1025082/" target="_blank">Trane</a>, Birdeye</div>
   </div>
+
   <div class="section-title" style="font-size:16px;margin-top:28px">High (Fix Within 30 Days)</div>
   <div class="finding-item high">
     <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">Hours inconsistency: 24/7 on site, 7:30 AM to 10 PM in directories</span></div>
-    <div class="finding-detail">Conflicting hours confuse customers and weaken Google's confidence in the business profile.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Decide the actual operating hours and synchronize GBP, Yelp, BBB, Angi, and the website.</div>
-    <div class="finding-src">Source: Website, GHL, BBB, Yelp, Angi</div>
+    <div class="finding-detail">The <a href="https://allyearcooling.com" target="_blank">website</a> claims 24/7 service. Google Business Profile, Yelp, BBB, and Angi show 7:30 AM to 10 PM. Conflicting hours confuse customers and weaken Google's confidence in the business profile.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Decide actual operating hours and synchronize GBP, Yelp, BBB, Angi, and the website. If 24/7 is accurate, update all directories. If not, update the website.</div>
+    <div class="finding-src">Source: <a href="https://allyearcooling.com" target="_blank">Website</a>, GHL, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a>, <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Yelp</a>, <a href="https://www.homeadvisor.com/rated.AllYearCooling.19297135.html" target="_blank">Angi</a></div>
   </div>
+
   <div class="finding-item high">
-    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">No live chat or AI chat widget</span></div>
-    <div class="finding-detail">GHL confirms no chat widget. Negative reviews repeatedly mention unanswered phones and missing callbacks. After hours leads have no alternate conversion path.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Add 24/7 AI chat that captures contact information, books appointments, and separates urgent from non urgent requests.</div>
-    <div class="finding-src">Source: GHL, website inspection, review themes</div>
+    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">No live chat or AI chat widget on website</span></div>
+    <div class="finding-detail">GHL confirms no chat widget. Their own negative reviews repeatedly mention phones not being answered and callbacks not returned. <a href="https://allyearcooling.com" target="_blank">After hours</a> leads have no alternate conversion path.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Add 24/7 AI chat that captures contact information, books appointments, and filters urgent vs non urgent requests. Directly addresses the biggest reputation weakness.</div>
+    <div class="finding-src">Source: GHL, <a href="https://allyearcooling.com" target="_blank">Website</a>, review themes</div>
   </div>
+
   <div class="finding-item high">
     <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">Yelp and BBB ratings trail Google</span></div>
-    <div class="finding-detail">Yelp is 4.0 with 319 reviews and BBB customer reviews are 3.38 with 16 reviews, compared with Google at 4.7. Third party platforms expose a service quality gap.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Solicit Yelp and BBB reviews from satisfied customers, respond to every negative review, and address the operational issues driving complaints.</div>
-    <div class="finding-src">Source: Google, Yelp, BBB</div>
+    <div class="finding-detail">Yelp is 4.0 with 319 reviews and BBB customer reviews are 3.38 with 16 reviews, compared with Google at 4.7. Third party platforms expose a service quality gap that Google does not show. <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Check Yelp</a> and <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a>.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Actively solicit Yelp and BBB reviews from satisfied customers. Respond to every negative review. Address the operational issues driving complaints.</div>
+    <div class="finding-src">Source: <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Yelp</a>, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a></div>
   </div>
+
   <div class="finding-item high">
-    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">Post sale service and warranty breakdowns</span></div>
-    <div class="finding-detail">GHL found 26% negative sentiment in 50 reviews. Themes include unanswered phones, callbacks not returned, warranty disputes, repeat unresolved repairs, no shows, and communication failures after payment.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Implement post sale follow up and warranty claim tracking. Assign a service recovery owner. This requires an operational fix, not only a marketing fix.</div>
-    <div class="finding-src">Source: GHL reputation analysis, Yelp, BBB</div>
+    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">Recurring negative theme: post sale service and warranty breakdowns</span></div>
+    <div class="finding-detail">GHL analysis shows 26% negative of 50 reviews analyzed. Themes: phone not answered, callbacks not returned, warranty disputes, repeat unresolved repairs, no shows, and communication failures after payment. <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Yelp reviews</a> and <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB complaints</a> confirm the pattern.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Operational issue impacting reputation. Implement post sale follow up and warranty claim tracking. Assign a service recovery owner.</div>
+    <div class="finding-src">Source: GHL, <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Yelp</a>, <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a></div>
   </div>
+
   <div class="finding-item high">
-    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">Instagram engagement is 0.1 to 0.3% despite 1,468 posts</span></div>
-    <div class="finding-detail">The account has volume but only 8 to 21 likes per post. YouTube is dormant and TikTok is abandoned. Effort is not translating into reach or leads.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Reduce posting volume and focus on useful Reels, service tips, before and after work, and customer testimonials across Facebook, Instagram, and GBP.</div>
-    <div class="finding-src">Source: Instagram, YouTube, TikTok</div>
+    <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">Instagram engagement at 0.1 to 0.3% despite 1,468 posts</span></div>
+    <div class="finding-detail">1,468 posts but only 8 to 21 likes per post. YouTube is dormant and TikTok is abandoned. <a href="https://www.instagram.com/allyearcooling/" target="_blank">See Instagram</a>. Effort is not translating into reach or leads.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Shift from volume to quality. Reduce posting frequency. Focus on Reels with hooks and trending audio. Post 3x per week with service tips, before and after photos, and customer testimonials.</div>
+    <div class="finding-src">Source: <a href="https://www.instagram.com/allyearcooling/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/@allyearcooling" target="_blank">YouTube</a>, <a href="https://www.tiktok.com/@allyearcooling" target="_blank">TikTok</a></div>
   </div>
+
   <div class="finding-item high">
     <div class="finding-head"><span class="badge badge-high">High</span><span class="finding-title">Plumbing service line has zero keyword presence</span></div>
-    <div class="finding-detail">The plumbing expansion is not ranking for plumber Coral Springs, drain cleaning Coral Springs, or related high intent searches.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Build plumbing service and city pages for plumber Coral Springs, drain cleaning, and water heater repair.</div>
+    <div class="finding-detail">The plumbing expansion is not ranking for plumber Coral Springs, drain cleaning Coral Springs, or related high intent searches. Untapped high intent market.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Build plumbing service and city pages. Target plumber Coral Springs, drain cleaning Coral Springs, water heater repair Coral Springs. Create dedicated plumbing service pages.</div>
     <div class="finding-src">Source: Google SERP analysis</div>
   </div>
+
   <div class="section-title" style="font-size:16px;margin-top:28px">Medium (Fix Within 90 Days)</div>
-  <div class="finding-item medium">
+  <div class="finding-item med">
     <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">AI crawlers fully blocked in robots.txt</span></div>
-    <div class="finding-detail">GPTBot, ClaudeBot, CCBot, and Google Extended are disallowed. The business is invisible to growing AI search channels.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Selectively unblock AI crawlers and monitor referrals from AI search.</div>
+    <div class="finding-detail">GPTBot, ClaudeBot, CCBot, and Google Extended are blocked. The business is invisible to growing AI search channels. <a href="https://allyearcooling.com/robots.txt" target="_blank">Check robots.txt</a>.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Selectively unblock AI crawlers. Allow GPTBot and Google Extended while keeping CCBot blocked if desired.</div>
     <div class="finding-src">Source: robots.txt inspection</div>
   </div>
-  <div class="finding-item medium">
-    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">Test and junk pages remain in the sitemap</span></div>
-    <div class="finding-detail">The sitemap includes /dummy-test-page/ and /education/. These pages signal poor site hygiene to crawlers.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Remove or noindex test pages and clean the sitemap to include only production pages.</div>
-    <div class="finding-src">Source: allyearcooling.com sitemap</div>
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">Test and junk pages in sitemap</span></div>
+    <div class="finding-detail">The sitemap includes /dummy-test-page/ and /education/. These pages signal poor site hygiene to Google crawlers.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Remove or noindex these pages. Clean the sitemap to only include production pages.</div>
+    <div class="finding-src">Source: <a href="https://allyearcooling.com/wp-sitemap.xml" target="_blank">Sitemap</a></div>
   </div>
-  <div class="finding-item medium">
-    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">Schema markup is not confirmed</span></div>
-    <div class="finding-detail">Yoast is present, but LocalBusiness and HVAC JSON LD were not verified through the Rich Results Test.</div>
-    <div class="finding-fix"><strong>Fix:</strong> Verify JSON LD and add HVACBusiness schema with services, areas served, hours, and aggregate rating if it is missing.</div>
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">Schema markup not confirmed</span></div>
+    <div class="finding-detail">Yoast is present, but LocalBusiness and HVAC JSON LD were not verified through the Rich Results Test. Missing schema means missing rich result opportunities.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Verify JSON LD via Google Rich Results Test. Add HVACBusiness schema if missing. Include services, areas served, hours, and aggregate rating.</div>
     <div class="finding-src">Source: Website source inspection</div>
   </div>
-  <div class="finding-item medium">
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">YouTube channel dormant for ~1 year</span></div>
+    <div class="finding-detail">335 subscribers. 89 videos, mostly TV commercials with paid views. No new content in ~1 year. <a href="https://www.youtube.com/@allyearcooling" target="_blank">Visit YouTube</a>. YouTube is a search engine with long tail value.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Resume posting educational content. How to change your AC filter, Signs your AC needs repair. YouTube videos rank in Google search results.</div>
+    <div class="finding-src">Source: <a href="https://www.youtube.com/@allyearcooling" target="_blank">YouTube</a></div>
+  </div>
+
+  <div class="finding-item med">
+    <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">TikTok presence abandoned</span></div>
+    <div class="finding-detail">10 followers, 36 total likes. Dead profile. <a href="https://www.tiktok.com/@allyearcooling" target="_blank">See TikTok</a>. Looks worse than no profile at all.</div>
+    <div class="finding-fix"><strong>Fix:</strong> Either commit to TikTok with short form educational content, or remove the profile entirely.</div>
+    <div class="finding-src">Source: <a href="https://www.tiktok.com/@allyearcooling" target="_blank">TikTok</a></div>
+  </div>
+
+  <div class="finding-item med">
     <div class="finding-head"><span class="badge badge-med">Medium</span><span class="finding-title">Blog padded with thin 2022 promotional posts</span></div>
-    <div class="finding-detail">The site has 295 blog posts, but hundreds are thin promotional pages. Volume without depth dilutes content quality signals.</div>
+    <div class="finding-detail">295 blog posts but hundreds are thin promotional pages from 2022. Volume without depth dilutes content quality signals.</div>
     <div class="finding-fix"><strong>Fix:</strong> Audit and noindex thin posts. Consolidate weak articles and focus on useful local HVAC and plumbing content.</div>
     <div class="finding-src">Source: Blog review, sitemap analysis</div>
   </div>
+
   <div class="section-title" style="font-size:16px;margin-top:28px">Low (Fix When Resources Allow)</div>
   <div class="finding-item low">
     <div class="finding-head"><span class="badge badge-low">Low</span><span class="finding-title">Not listed on Thumbtack or Yellow Pages</span></div>
@@ -454,84 +439,120 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--card)}
     <div class="finding-fix"><strong>Fix:</strong> Create both listings using one canonical name, address, and phone number.</div>
     <div class="finding-src">Source: Thumbtack and Yellow Pages searches</div>
   </div>
+
   <div class="finding-item low">
-    <div class="finding-head"><span class="badge badge-low">Low</span><span class="finding-title">LinkedIn is used only for recruiting</span></div>
-    <div class="finding-detail">The company has 991 followers but no meaningful company or industry content. Commercial HVAC credibility is being left on the table.</div>
+    <div class="finding-head"><span class="badge badge-low">Low</span><span class="finding-title">LinkedIn used only for recruiting</span></div>
+    <div class="finding-detail">991 followers but no meaningful company or industry content. Commercial HVAC credibility is being left on the table. <a href="https://www.linkedin.com/company/all-year-cooling" target="_blank">Visit LinkedIn</a>.</div>
     <div class="finding-fix"><strong>Fix:</strong> Post company updates, project work, and commercial HVAC insight.</div>
-    <div class="finding-src">Source: LinkedIn company page</div>
+    <div class="finding-src">Source: <a href="https://www.linkedin.com/company/all-year-cooling" target="_blank">LinkedIn</a></div>
   </div>
+
   <div class="finding-item low">
     <div class="finding-head"><span class="badge badge-low">Low</span><span class="finding-title">Website review widget shows stale count</span></div>
-    <div class="finding-detail">The site shows 1,873 Google reviews while the current count is approximately 2,580. The company is underselling its own reputation by more than 700 reviews.</div>
+    <div class="finding-detail">The site shows 1,873 Google reviews while the current count is ~2,580. The company is underselling its own reputation by 700+ reviews.</div>
     <div class="finding-fix"><strong>Fix:</strong> Update the widget to pull current Google Business Profile data.</div>
-    <div class="finding-src">Source: allyearcooling.com homepage</div>
+    <div class="finding-src">Source: <a href="https://allyearcooling.com" target="_blank">Website</a></div>
   </div>
-  <div class="cta-small"><div class="cta-small-text"><strong>Your site takes 18 seconds to load. You rank #9 in your own market. Five phone numbers split your call data.</strong> The fixes are not optional if you want the displaced Air Pros demand.</div><a href="https://www.boostconhq.com/book" class="cta-small-btn" target="_blank">Book a Call</a></div>
+
+  <div class="cta-small">
+    <div class="cta-small-text"><strong>Your site takes 18 seconds to load. You rank #9 in your own market. Five phone numbers split your call data.</strong> The fixes are not optional if you want the displaced Air Pros demand.</div>
+    <a href="https://www.boostconhq.com/book?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" class="cta-small-btn" target="_blank">Book a Call</a>
+  </div>
 </section>
-<!-- 06 OPPORTUNITIES -->
+
 <section class="section" id="opportunities">
   <div class="section-num">06</div>
   <div class="section-title">Top 5 Immediate Opportunities</div>
   <div class="opp-grid">
-    <div class="opp-card"><div class="opp-rank">01</div><div class="opp-title">Fix Website Speed and Core Web Vitals (Emergency)</div><div class="opp-desc">GHL confirmed an 18.2 second mobile load time with Core Web Vitals at 0 to 6%. This is actively suppressing Google rankings. No amount of content or backlinks will help if the site is this slow. Compress images, remove duplicated carousels, minify assets, and implement caching.</div><div class="opp-meta"><span class="opp-tag badge-crit">Critical Impact</span><span class="opp-tag badge-high">1 to 2 Weeks</span></div></div>
-    <div class="opp-card"><div class="opp-rank">02</div><div class="opp-title">Standardize NAP and Fix the Local SEO Foundation</div><div class="opp-desc">Consolidate to one primary phone number across all 31 or more directories. GHL confirms 48% of citations are wrong. Once citations are clean, the 2,580 reviews and 52 year history become a much stronger ranking signal and directly support the #9 Map Pack ranking.</div><div class="opp-meta"><span class="opp-tag badge-high">High Impact</span><span class="opp-tag badge-high">2 to 4 Weeks</span></div></div>
-    <div class="opp-card"><div class="opp-rank">03</div><div class="opp-title">Capture Page 1 for Core Coral Springs HVAC Keywords</div><div class="opp-desc">The dedicated Coral Springs landing page is indexed but not ranking. With speed fixed and NAP clean, optimize for AC repair Coral Springs, HVAC Coral Springs, and AC installation Coral Springs. Art Plumbing and Snyder AC are beatable if the technical foundation is repaired.</div><div class="opp-meta"><span class="opp-tag badge-high">High Impact</span><span class="opp-tag badge-high">3 to 6 Months</span></div></div>
-    <div class="opp-card"><div class="opp-rank">04</div><div class="opp-title">Deploy Systematic Review Generation to Close the Gap</div><div class="opp-desc">All Year Cooling has approximately 2,580 Google reviews. Art Plumbing has 10,560 and Snyder has 29,000 total. Implement post service SMS requests, GBP links in email signatures, and technician driven asks. Target 50 or more new reviews per month.</div><div class="opp-meta"><span class="opp-tag badge-high">High Impact</span><span class="opp-tag badge-low">Ongoing</span></div></div>
-    <div class="opp-card"><div class="opp-rank">05</div><div class="opp-title">Add 24/7 AI Chat to Capture After Hours Leads</div><div class="opp-desc">Negative reviews repeatedly mention phones not being answered and callbacks not returned. GHL confirms no chat widget. A 24/7 AI chat can capture leads when humans cannot, book appointments, and filter urgent requests while directly addressing the company’s largest reputation weakness.</div><div class="opp-meta"><span class="opp-tag badge-med">Medium High Impact</span><span class="opp-tag badge-high">1 to 2 Weeks</span></div></div>
+    <div class="opp-card">
+      <div class="opp-rank">01</div>
+      <div class="opp-title">Fix Website Speed and Core Web Vitals (Emergency)</div>
+      <div class="opp-desc">GHL confirmed an 18.2 second mobile load time with Core Web Vitals at 0 to 6%. This is actively suppressing Google rankings. No amount of content or backlinks will help if the site is this slow. Compress images, remove duplicated carousels, minify assets, and implement caching. <a href="https://allyearcooling.com" target="_blank">Visit the site</a> on a phone to see the delay.</div>
+      <div class="opp-meta"><span class="opp-tag badge-crit">Critical Impact</span><span class="opp-tag badge-high">1 to 2 Weeks</span></div>
+    </div>
+    <div class="opp-card">
+      <div class="opp-rank">02</div>
+      <div class="opp-title">Standardize NAP and Fix the Local SEO Foundation</div>
+      <div class="opp-desc">Consolidate to one primary phone number across all 31+ directories. GHL confirms 48% of citations are wrong. Once citations are clean, the 2,580+ reviews and 52 year history become a much stronger ranking signal. This directly impacts the #9 Map Pack ranking.</div>
+      <div class="opp-meta"><span class="opp-tag badge-high">High Impact</span><span class="opp-tag badge-high">2 to 4 Weeks</span></div>
+    </div>
+    <div class="opp-card">
+      <div class="opp-rank">03</div>
+      <div class="opp-title">Capture Page 1 for Core Coral Springs HVAC Keywords</div>
+      <div class="opp-desc">The dedicated Coral Springs landing page is indexed but not ranking. With speed fixed and NAP clean, optimize for AC repair Coral Springs, HVAC Coral Springs, and AC installation Coral Springs. Art Plumbing and Snyder AC are beatable if the technical foundation is repaired.</div>
+      <div class="opp-meta"><span class="opp-tag badge-high">High Impact</span><span class="opp-tag badge-high">3 to 6 Months</span></div>
+    </div>
+    <div class="opp-card">
+      <div class="opp-rank">04</div>
+      <div class="opp-title">Deploy Systematic Review Generation to Close the Gap</div>
+      <div class="opp-desc">All Year has ~2,580 Google reviews. Art Plumbing has 10,560 and Snyder has 29,000 total. Implement post service SMS requests, GBP review links in email signatures, and technician driven asks. Target 50+ new reviews per month. This is the long game moat that compounds.</div>
+      <div class="opp-meta"><span class="opp-tag badge-high">High Impact</span><span class="opp-tag badge-low">Ongoing</span></div>
+    </div>
+    <div class="opp-card">
+      <div class="opp-rank">05</div>
+      <div class="opp-title">Add 24/7 AI Chat to Capture After Hours Leads</div>
+      <div class="opp-desc">Negative reviews repeatedly mention phones not being answered and callbacks not returned. GHL confirms no chat widget. A 24/7 AI chat can capture leads when humans cannot, book appointments, and filter urgent requests. Directly addresses the biggest reputation weakness.</div>
+      <div class="opp-meta"><span class="opp-tag badge-med">Medium High Impact</span><span class="opp-tag badge-high">1 to 2 Weeks</span></div>
+    </div>
   </div>
+
   <div class="cta-large" style="margin-top:32px">
     <div class="cta-title">Every Day You Wait, a Competitor Gets the Call</div>
     <div class="cta-desc">All Year Cooling is losing an estimated $27,000 to $54,000 per month in missed service calls. Snyder AC is growing its review advantage. Air Pros left thousands of stranded customers looking for a new provider. The fixes on this page are the difference between capturing that demand and handing it to your competitors. Book a 30 minute call and we will build the 90 day execution plan.</div>
-    <a href="https://www.boostconhq.com/book" class="cta-btn" target="_blank">Book Your Discovery Call</a>
+    <a href="https://www.boostconhq.com/book?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" class="cta-btn" target="_blank">Book Your Discovery Call</a>
     <div class="cta-contact">info@boostconhq.com &middot; (541) 262-BOOST &middot; (541) 262-6678</div>
   </div>
 </section>
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-text">Powered by BoostCon &middot; AI Consulting for Home Services</div>
-  <div class="footer-text" style="margin-top:8px">This report was generated on Sep 5, 2026. Data sources include BBB, Trane, Yelp, Angi, HomeAdvisor, Google via GHL and Trane, Meta, Instagram, YouTube, LinkedIn, TikTok, X, PitchBook, RocketReach, GHL Marketing Audit Report, and direct website inspection.</div>
-</footer>
-<script>
-(function(){
-  var html=document.documentElement;var toggle=document.getElementById('themeToggle');
-  var saved=localStorage.getItem('briskair-theme');
-  if(saved){html.setAttribute('data-theme',saved);}
-  toggle.addEventListener('click',function(){
-    var current=html.getAttribute('data-theme');
-    var next=current==='dark'?'light':'dark';
-    html.setAttribute('data-theme',next);
-    localStorage.setItem('briskair-theme',next);
-    toggle.innerHTML=next==='dark'?'☾':'☀';
-  });
-  toggle.innerHTML=(html.getAttribute('data-theme')==='dark')?'☾':'☀';
-})();
-document.getElementById('printBtn').addEventListener('click',function(){window.print();});
-window.addEventListener('load',function(){
-  var bars=document.querySelectorAll('.score-bar');
-  bars.forEach(function(bar){var w=bar.style.width;bar.style.width='0';setTimeout(function(){bar.style.width=w;},100);});
-});
 
-// Hamburger menu
+<footer class="footer">
+  <div class="footer-text">Powered by <a href="https://boostconhq.com/?utm_source=audit_report&utm_medium=web&utm_campaign=allyear" target="_blank">Boostcon</a> &middot; AI Consulting for Home Services</div>
+  <div class="footer-text" style="margin-top:8px">This report was generated on Sep 5, 2026. Data sources include <a href="https://www.bbb.org/us/fl/coral-springs/profile/air-conditioning-contractor/all-year-cooling-and-heating-inc-0633-4003950" target="_blank">BBB</a>, <a href="https://www.trane.com/residential/en/dealers/all-year-cooling-coral-springs-florida-1025082/" target="_blank">Trane</a>, <a href="https://www.yelp.com/biz/all-year-coral-springs-2" target="_blank">Yelp</a>, <a href="https://www.homeadvisor.com/rated.AllYearCooling.19297135.html" target="_blank">Angi</a>, <a href="https://www.consumeraffairs.com/homeowners/allyearcooling.html" target="_blank">ConsumerAffairs</a>, Google via GHL and Trane, Meta, <a href="https://www.instagram.com/allyearcooling/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/@allyearcooling" target="_blank">YouTube</a>, <a href="https://www.linkedin.com/company/all-year-cooling" target="_blank">LinkedIn</a>, <a href="https://www.tiktok.com/@allyearcooling" target="_blank">TikTok</a>, <a href="https://x.com/allyearch" target="_blank">X</a>, PitchBook, <a href="https://rocketreach.co/all-year-cooling-profile_b4b9b5d5fb0b61c7" target="_blank">RocketReach</a>, GHL Marketing Audit Report, and direct website inspection.</div>
+</footer>
+
+<script>
+function toggleTheme(){var t=document.documentElement.getAttribute('data-theme');if(t==='light'){document.documentElement.removeAttribute('data-theme');localStorage.setItem('theme','dark');document.querySelector('.icon-btn').textContent='☾'}else{document.documentElement.setAttribute('data-theme','light');localStorage.setItem('theme','light');document.querySelector('.icon-btn').textContent='☀'}}
+document.getElementById('themeToggle').addEventListener('click',toggleTheme);
+document.getElementById('printBtn').addEventListener('click',function(){window.print()});
 document.getElementById('hamburger').addEventListener('click',function(e){
   e.stopPropagation();
   var menu=document.getElementById('mobileMenu');
   menu.classList.toggle('open');
-  this.innerHTML=menu.classList.contains('open')?'&#10005;':'&#9776;';
 });
 document.addEventListener('click',function(e){
   var menu=document.getElementById('mobileMenu');
   var hamburger=document.getElementById('hamburger');
   if(menu.classList.contains('open') && !menu.contains(e.target) && e.target!==hamburger){
     menu.classList.remove('open');
-    hamburger.innerHTML='&#9776;';
   }
 });
 document.querySelectorAll('.mobile-menu .nav-link').forEach(function(link){
   link.addEventListener('click',function(){
     document.getElementById('mobileMenu').classList.remove('open');
-    document.getElementById('hamburger').innerHTML='&#9776;';
   });
 });
+(function(){var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light');document.querySelector('.icon-btn').textContent='☀'}})();
+(function(){
+  var sections=['score','company','findings','benchmark','broken','opportunities'];
+  var navLinks=document.querySelectorAll('.nav-link');
+  function updateActive(){
+    var current='';
+    var scrollPos=window.scrollY+100;
+    for(var i=0;i<sections.length;i++){
+      var section=document.getElementById(sections[i]);
+      if(section&&section.offsetTop<=scrollPos){current=sections[i]}
+    }
+    if(current){
+      for(var i=0;i<navLinks.length;i++){
+        navLinks[i].classList.remove('active');
+        if(navLinks[i].getAttribute('href')==='#'+current){
+          navLinks[i].classList.add('active');
+        }
+      }
+    }
+  }
+  window.addEventListener('scroll',updateActive);
+  updateActive();
+})();
 </script>
 </body>
 </html>
